@@ -1,0 +1,21 @@
+.home .logo-container .pichau-logo {
+  width: 300px;
+}
+
+.home .departamentos {
+  background-color: red;
+}
+
+.home .departamentos .dep-bars {
+}
+
+.home .options {
+  display: flex;
+  color: white;
+}
+.home .options .contact {
+  padding: 20px;
+}
+.home .options .contact strong {
+  font-size: 20px;
+}
