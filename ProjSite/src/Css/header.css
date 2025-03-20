@@ -1,21 +1,108 @@
-.home .logo-container .pichau-logo {
-  width: 300px;
+.home {
+  margin-left: 205px;
+  padding-top: 5px;
+  margin-right: 255px;
 }
 
-.home .departamentos {
-  background-color: red;
-}
-
-.home .departamentos .dep-bars {
-}
-
-.home .options {
+.home .header-upper {
   display: flex;
+  justify-content: space-between;
+  height: 78px;
+}
+
+
+.home .header-upper .logo-container .pichau-logo {
+  width: 215px;
+}
+
+.home .header-under .departamentos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  border-radius: 7px;
+  height: 63px;
+  width: 350px;
+  outline: 0;
+  border: solid 3px red;  margin: 0;
+  cursor: pointer;
+  background-color: red;
+  
+}
+
+.home .header-under .departamentos:hover{
+  background-color: rgb(150, 0, 0);
+}
+
+.home .header-under {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home .header-under .departamentos .dep-bars {
+  margin-left: 10px;
+  height: 28px;
+}
+
+.home .header-under .departamentos .dep-words {
+  display: flex;
+  width: 200px;
+  flex-direction: column;
   color: white;
+  align-items: end;
 }
-.home .options .contact {
-  padding: 20px;
+
+.home .header-under .departamentos .dep-words strong {
+  font-size: 1.7em;
 }
-.home .options .contact strong {
-  font-size: 20px;
+
+
+
+
+
+
+
+
+
+
+
+.home .header-upper .options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; 
+  cursor: pointer;
+  color: white;
+  font-size: 25px;
+}
+
+.home .header-upper .options div { 
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+  text-align: left;
+}
+
+.home .header-upper .options button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 1.75rem;
+}
+
+.home .header-upper .options span {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.home .header-upper .options strong {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
 }
