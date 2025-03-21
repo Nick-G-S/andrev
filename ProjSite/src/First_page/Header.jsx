@@ -72,12 +72,13 @@ function Header() {
               Modo<strong>Escuro</strong>
             </span>
           </div> */}
-            <div className="ShoppingCar">
-              <FontAwesomeIcon icon={faCartShopping} />
-              <span>
+          
+            <button className="ShoppingCar">
+              <span><FontAwesomeIcon icon={faCartShopping} /></span>
+              
                 <strong>Carrinho</strong>
-              </span>
-            </div>
+              
+            </button>
           </div>
         </header>
 
