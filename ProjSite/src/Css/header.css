@@ -10,7 +10,6 @@
   height: 78px;
 }
 
-
 .home .header-upper .logo-container .pichau-logo {
   width: 215px;
 }
@@ -56,6 +55,37 @@
 .home .header-under .departamentos .dep-words strong {
   font-size: 1.7em;
 }
+
+
+.home .header-under  .search {
+
+  
+    display: inline-flex;
+    align-items: center;
+    width: 70%;
+    border-radius: 4px;
+    background: rgb(66, 66, 66);
+    border: rgb(66, 66, 66);
+}
+
+
+.home .header-under  .search input {
+ padding: 10px;
+ text-align: left;
+border-radius:4px ;
+opacity: 1;
+background: rgb(66, 66, 66);
+border: rgb(66, 66, 66);
+color: white;
+outline: 0;
+display: flex;
+justify-content: center;
+width: 900px;
+display: inline-flex;
+font-size: 20px;
+}
+
+
 
 
 /* options header-upper */
@@ -122,3 +152,5 @@
  padding-right: 25px; 
  font-size: 25px;
 }
+
+

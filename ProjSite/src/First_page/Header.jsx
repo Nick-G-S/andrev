@@ -72,12 +72,12 @@ function Header() {
               Modo<strong>Escuro</strong>
             </span>
           </div> */}
-          
+
             <button className="ShoppingCar">
               <span><FontAwesomeIcon icon={faCartShopping} /></span>
-              
-                <strong>Carrinho</strong>
-              
+
+              <strong>Carrinho</strong>
+
             </button>
           </div>
         </header>
@@ -97,14 +97,18 @@ function Header() {
           </button>
 
           <div className="search">
-            <span>digite o que você procura...</span>
-            <FontAwesomeIcon icon={faMagnifyingGlass} />
+            
+            <input   placeholder="digite o que você procura..." type="text"    />
+           
           </div>
         </header>
       </div>
     </>
   );
 }
+
+
+//<input aria-invalid="false" autocomplete="off" id=":R6l8pbb:" placeholder="Digite o que você procura..." type="text" aria-autocomplete="both" aria-expanded="false" autocapitalize="none" spellcheck="false" role="combobox" value=""></input>
 
 // magnifying glass
 export default Header;
