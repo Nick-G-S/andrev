@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Header from "./First_page/Header.jsx";
+import Content from "./First_page/Content.jsx";
 import "./index.css";
 
 function App() {
@@ -8,6 +9,8 @@ function App() {
   return (
       <div className="app">
         <Header />
+        <br />
+        <Content />
       </div>
   );
 }

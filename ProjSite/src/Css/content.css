@@ -1,5 +1,15 @@
-*{
-    background-color: blue;
+.content .small-container{
+    margin-left: 200px;
+
+}
+
+.content .small-container .promo img{
+    border-radius: 5px;
+}
+
+.content .small-container .promo-small-container{
+    display: flex;
+    gap: 50px;
 }
 
 

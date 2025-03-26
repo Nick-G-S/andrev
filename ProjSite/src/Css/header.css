@@ -80,7 +80,7 @@ color: white;
 outline: 0;
 display: flex;
 justify-content: center;
-width: 900px;
+width:900px;
 display: inline-flex;
 font-size: 20px;
 }
@@ -93,16 +93,15 @@ font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 5px;
   cursor: pointer;
   color: white;
-  font-size: 25px;
+  font-size: 13px;
 }
 
 .home .header-upper .options div {
   display: flex;
   align-items: center;
-  gap: 10px;
   text-align: left;
 }
 
@@ -116,16 +115,16 @@ font-size: 20px;
   cursor: pointer;
   border-radius: 50%;
   padding: 12px;
-  font-size: 1.75rem;
+  font-size: 20px;
 }
 
 .home .header-upper .options span {
-  font-size: 14px;
+  font-size: 10px;
   text-transform: uppercase;
 }
 
 .home .header-upper .options strong {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
   display: block;
 }
@@ -142,15 +141,20 @@ font-size: 20px;
  
 }
 
-.home .header-upper .options .ShoppingCar strong{
+.home .header-upper .options .ShoppingCar span strong{
   font-size: 20px; 
   text-transform: uppercase;
-
+justify-content: center;
 }
 
-.home .header-upper .options .ShoppingCar span{
- padding-right: 25px; 
- font-size: 25px;
+.home .header-upper .options .ShoppingCar span span {
+  display: flex;
+  cursor: pointer;
+  color: white;
+  font-size: 13px;
+  text-align:right;
+  justify-content: center;
+
 }
 
 

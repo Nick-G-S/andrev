@@ -63,21 +63,25 @@ function Header() {
               <span>
                 Modo
                 <br />
-                <strong>Claro</strong>
+                <strong>Escuro</strong>
               </span>
             </div>
             {/* <div className="fundo">
             <FontAwesomeIcon icon={faSun} />
             <span>
-              Modo<strong>Escuro</strong>
+              Modo<strong>Claro</strong>
             </span>
           </div> */}
 
             <button className="ShoppingCar">
-              <span><FontAwesomeIcon icon={faCartShopping} /></span>
-
-              <strong>Carrinho</strong>
-
+              <span>
+                <FontAwesomeIcon icon={faCartShopping} size="2x" />
+              </span>
+              <span>
+                <strong>Carrinho</strong>
+                <br />
+                <span>0 produtos</span>
+              </span>
             </button>
           </div>
         </header>
@@ -97,16 +101,13 @@ function Header() {
           </button>
 
           <div className="search">
-            
-            <input   placeholder="digite o que você procura..." type="text"    />
-           
+            <input placeholder="digite o que você procura..." type="text" />
           </div>
         </header>
       </div>
     </>
   );
 }
-
 
 //<input aria-invalid="false" autocomplete="off" id=":R6l8pbb:" placeholder="Digite o que você procura..." type="text" aria-autocomplete="both" aria-expanded="false" autocapitalize="none" spellcheck="false" role="combobox" value=""></input>
 
