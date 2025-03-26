@@ -131,30 +131,46 @@ font-size: 20px;
 
 
 
+
 .home .header-upper .options .ShoppingCar {
   color: white;
   background-color: #009e2a;
-  padding: 20px 30px 15px 25px;
+  padding: 10px 20px;
   border-radius: 5px;
   display: flex;
-  border: 1px solid #009e2a;
- 
-}
-
-.home .header-upper .options .ShoppingCar span strong{
-  font-size: 20px; 
-  text-transform: uppercase;
-justify-content: center;
-}
-
-.home .header-upper .options .ShoppingCar span span {
-  display: flex;
+  align-items: center;
+  border: none;
+  gap: 8px;  
   cursor: pointer;
-  color: white;
-  font-size: 13px;
-  text-align:right;
-  justify-content: center;
-
+  min-width: 140px; 
+  justify-content: space-between;
 }
 
+.home .header-upper .options .ShoppingCar .icon {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.home .header-upper .options .ShoppingCar .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;  
+}
+
+.home .header-upper .options .ShoppingCar .text strong {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.home .header-upper .options .ShoppingCar .text span {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.home .header-upper .options .ShoppingCar .arrow {
+  font-size: 14px;
+  margin-left: auto;
+}
 

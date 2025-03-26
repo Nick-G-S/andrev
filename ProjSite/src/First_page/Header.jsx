@@ -9,6 +9,7 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faCircleQuestion } from "@fortawesome/free-solid-svg-icons";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import logo from "../assets/pichau-logo.png";
 
 import "../Css/header.css";
@@ -73,16 +74,21 @@ function Header() {
             </span>
           </div> */}
 
-            <button className="ShoppingCar">
-              <span>
-                <FontAwesomeIcon icon={faCartShopping} size="2x" />
-              </span>
-              <span>
-                <strong>Carrinho</strong>
-                <br />
-                <span>0 produtos</span>
-              </span>
-            </button>
+<button className="ShoppingCar">
+  <span className="icon">
+    <FontAwesomeIcon icon={faCartShopping} size="lg" />
+  </span>
+  <span className="text">
+    <strong>CARRINHO</strong>
+    <span>0 PRODUTO</span>
+  </span>
+  <span className="arrow">
+    <FontAwesomeIcon icon={faChevronDown} size="sm" />
+  </span>
+</button>
+
+
+
           </div>
         </header>
 
