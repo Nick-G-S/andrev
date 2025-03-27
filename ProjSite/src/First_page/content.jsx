@@ -26,10 +26,10 @@ function Content() {
         </div>
 
         <div className="promo-small-container">
-          <div className="liltle promo">
+          <div className="little promo">
             <img src={lil_promo} alt="" />
           </div>
-          <div className="liltle promo">
+          <div className="little promo">
             <img src={lil_promo2} alt="" />
           </div>
         </div>
@@ -41,7 +41,7 @@ function Content() {
 
       <div className="box-containers">
         <div className="box">
-          <div className="box-logo">
+          <div className="box-logo gaming">
             <img src={gaming} alt="" />
           </div>
           <div className="box-txt">
@@ -51,7 +51,7 @@ function Content() {
         </div>
 
         <div className="box">
-          <div className="box-logo">
+          <div className="box-logo work_station">
             <img src={work_station} alt="" />
           </div>
           <div className="box-txt">
@@ -62,7 +62,7 @@ function Content() {
         </div>
 
         <div className="box">
-          <div className="box-logo">
+          <div className="box-logo pichau-white">
             <img src={pichau_white} alt="" />
           </div>
           <div className="box-txt">
@@ -71,7 +71,7 @@ function Content() {
           </div>
         </div>
 
-        <div className="box">
+        <div className="box monte">
           <div className="box-logo">
             <img src={monte} alt="" />
           </div>

@@ -1,3 +1,11 @@
+.content .wide_promo{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 15px;
+}
+
 .content .small-container{
     display: flex;
     flex-direction: column;
@@ -8,9 +16,15 @@
     
 
 }
+.content .small-container{
+    margin-left: 220px;
+}
 
+.content .small-container .promo{
+    border-radius: 2px;
+}
 .content .small-container .promo img{
-    border-radius: 5px;
+    scale: 1.01
 }
 
 .content .small-container .promo-small-container{
@@ -21,15 +35,48 @@
 .content .box-containers{
     display: flex;
     justify-content: space-between;
-    margin-left: 200px;
-    margin-right: 255px;
+    
+    margin-left: 210px;
+    margin-right: 240px;
 }
 
 .content .box-containers .box{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: aqua;
     border-radius: 5px;
     overflow: hidden;
+    width: 313px;
+    height: 100px;
+}
+
+.content .box-containers .box .box-logo .gaming{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 20px;
+    background-color: green;
+}
+
+.content .box-containers .box .box-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 20px;
+    height: 100px;
+    background-color: green;
+}
+
+.content .box-containers .box .box-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 20px;
+    background-color: green;
 }
 
 .content .box-containers .box .box-logo{
@@ -48,9 +95,8 @@
 .content .box-containers .box .box-txt{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    
+    align-items: center; 
+    gap: 20px;
 }
 
 .content .box-containers .box .box-txt strong{
