@@ -1,5 +1,11 @@
 .content .small-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin-left: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
 
 }
 
@@ -11,6 +17,50 @@
     display: flex;
     gap: 50px;
 }
+
+.content .box-containers{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 255px;
+}
+
+.content .box-containers .box{
+    display: flex;
+    background-color: aqua;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.content .box-containers .box .box-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 20px;
+    background-color: green;
+}
+
+.content .box-containers .box .box-logo img{
+    width: 70px;
+}
+
+.content .box-containers .box .box-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    
+}
+
+.content .box-containers .box .box-txt strong{
+    font-size: 16px;
+}
+
+.content .box-containers .box .box-txt span{
+    font-size: 12px;
+}
+
 
 
 
