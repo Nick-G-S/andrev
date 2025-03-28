@@ -40,44 +40,50 @@ function Content() {
       </div>
 
       <div className="box-containers">
-        <div className="box">
-          <div className="box-logo gaming">
-            <img src={gaming} alt="" />
-          </div>
-          <div className="box-txt">
-            <strong>GAMER</strong>
-            <span>O PC PERFEITO PARA JOGAR</span>
-          </div>
-        </div>
-
-        <div className="box">
-          <div className="box-logo work_station">
-            <img src={work_station} alt="" />
-          </div>
-          <div className="box-txt">
-            <strong>WORK </strong>
-            <strong>STATION</strong>
-            <span>PARA MODELAGEM E RENDERIZAÇÃO</span>
+        <div className="boxgaming">
+          <div className="box">
+            <div className="box-logo1 gaming">
+              <img src={gaming} alt="" />
+            </div>
+            <div className="box-txt">
+              <strong>GAMER</strong>
+              <span>O PC PERFEITO PARA JOGAR</span>
+            </div>
           </div>
         </div>
 
-        <div className="box">
-          <div className="box-logo pichau-white">
-            <img src={pichau_white} alt="" />
-          </div>
-          <div className="box-txt">
-            <strong>HOME</strong>
-            <span>PARA CASA OU ESCRITÓRIO</span>
+        <div className="box_work_station">
+          <div className="box ">
+            <div className="box-logo2 work_station">
+              <img src={work_station} alt="" />
+            </div>
+            <div className="box-txt">
+              <strong>WORK </strong>
+              <strong>STATION</strong>
+              <span>PARA MODELAGEM E RENDERIZAÇÃO</span>
+            </div>
           </div>
         </div>
-
-        <div className="box monte">
-          <div className="box-logo">
-            <img src={monte} alt="" />
+        <div className="boxpichau_white">
+          <div className="box ">
+            <div className="box-logo3 pichau-white">
+              <img src={pichau_white} alt="" />
+            </div>
+            <div className="box-txt">
+              <strong>HOME</strong>
+              <span>PARA CASA OU  ESCRITÓRIO</span>
+            </div>
           </div>
-          <div className="box-txt">
-            <strong>MONTE</strong>
-            <span>O SEU PC</span>
+        </div>
+        <div className="boxmonte">
+          <div className="box ">
+            <div className="box-logo4">
+              <img src={monte} alt="" />
+            </div>
+            <div className="box-txt">
+              <strong>MONTE</strong>
+              <span>O SEU PC</span>
+            </div>
           </div>
         </div>
       </div>
