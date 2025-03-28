@@ -187,9 +187,9 @@ font-size: 20px;
 @media (max-width: 1400px) {
 
   .home {
-    margin-left: 40px;
-    padding-top: 5px;
-    margin-right: 255px;
+    margin-left: 20px;
+    padding-top: 10px;
+    margin-right: 50px;
   }
   
   
@@ -197,10 +197,10 @@ font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px;
-    border-radius: 7px;
-    height: 63px;
-    width: 350px;
+    padding: 10px;
+    border-radius: 5px;
+    height: 50px;
+    width: 250px;
     outline: 0;
     border: solid 3px red;
     margin: 0;
@@ -219,22 +219,25 @@ font-size: 20px;
   }
   
   .home .header-under .departamentos .dep-bars {
-    margin-left: 10px;
-    height: 28px;
-  }
+    margin-left: 15px;
+    height: 18px;
+    font-size: 10px; }
   
   .home .header-under .departamentos .dep-words {
     display: flex;
-    width: 200px;
+    width: 150px;
     flex-direction: column;
     color: white;
     align-items: end;
+    
   }
   
   .home .header-under .departamentos .dep-words strong {
-    font-size: 1.7em;
+    font-size: 1.3em;
   }
-  
+  .home .header-under .departamentos .dep-words div{
+    font-size: 0.8em;
+  }  
   
   .home .header-under  .search {
   
@@ -276,7 +279,7 @@ font-size: 20px;
   }
   
   .home .header-upper .logo-container .pichau-logo {
-    width: 215px;
+    width: 180px;
   }
   
   .home .header-upper .options {
