@@ -11,26 +11,27 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-left: 200px;
+    margin-left: 255px;
     margin-top: 10px;
     margin-bottom: 10px;
-    
-
-}
-.content .small-container{
-    margin-left: 220px;
+    margin-right: 255px;
 }
 
-.content .small-container .promo{
-    border-radius: 2px;
+.content .small-container .lil-wide img {
+    width: 1500px;
 }
+
+.content .small-container .little img {
+    width: 740px;
+}
+
 .content .small-container .promo img{
-    scale: 1.01
+    border-radius: 5px;
 }
 
 .content .small-container .promo-small-container{
     display: flex;
-    gap: 50px;
+    gap: 20px;
 }
 
 .content .box-containers{
