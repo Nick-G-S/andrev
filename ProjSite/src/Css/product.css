@@ -1,3 +1,24 @@
-*{
-    background-color: blue;
+.product .new-product .new-product-txt{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 50px;
+    width: 1500px;
+    color: red;
+}
+
+.product .new-product .new-product-txt h1{
+    font-size: 28px;    
+    color:white;
+    text-transform: uppercase;
+
+}
+
+.product .new-product .product-box .separator{
+    width: 30px; 
+    height: 2px;
+    background: #F00;
+    margin: 10px 0;
+    
 }
