@@ -86,9 +86,6 @@ function Header() {
     <FontAwesomeIcon icon={faChevronDown} size="sm" />
   </span>
 </button>
-
-
-
           </div>
         </header>
 

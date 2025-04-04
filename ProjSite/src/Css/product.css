@@ -1,24 +1,81 @@
-.product .new-product .new-product-txt{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-    margin-top: 50px;
-    width: 1500px;
-    color: red;
+.product .new-product {
 }
 
-.product .new-product .new-product-txt h1{
-    font-size: 28px;    
-    color:white;
-    text-transform: uppercase;
-
+.product .new-product .new-product-txt {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 50px;
+  width: 1500px;
+  color: red;
+  margin-bottom: 16px;
 }
 
-.product .new-product .product-box .separator{
-    width: 30px; 
-    height: 2px;
-    background: #F00;
-    margin: 10px 0;
-    
+.product .new-product .new-product-txt h1 {
+  font-size: 28px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.product .new-product .product-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 227px;
+  height: 517px;
+  color: white;
+}
+
+.product .new-product .product-box .product-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  border-radius: 10px;
+  width: 227px;
+  height: 227px;
+}
+
+.product .new-product .product-box .product-details {
+  display: flex;
+  flex-direction: column;
+}
+.product .new-product .product-box .product-details span {
+  color: red;
+}
+
+.product .new-product .product-box .product-price-vista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.product .new-product .product-box .product-price-vista div {
+  font-size: 30px;
+  color: #169b09;
+}
+.product .new-product .product-box .product-price-vista span {
+  font-size: 10px;
+}
+.product .new-product .product-box .product-price-vista .vista-span {
+  color: #169b09;
+}
+
+.product .new-product .product-box .separator {
+  width: 30px;
+  height: 2px;
+  background: #f00;
+  margin: 10px 0;
+}
+
+.product .new-product .product-box .product-parcelado-inline {
+  display: flex;
+  flex-direction: column;
+}
+
+.product .new-product .product-box .product-parcelado-inline .inline-payment {
+  color: red;
+}
+.product .new-product .product-box .product-parcelado-inline span {
+  font-size: 14px;
 }
