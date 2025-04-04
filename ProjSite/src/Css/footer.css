@@ -1,3 +1,8 @@
-*{
-    background-color: blue;
+.banner_rotativo span{
+    color: red;
+    font-size: 55px;
+}
+.historicoDeNavegacao span{
+    color: red;
+    font-size: 55px;
 }

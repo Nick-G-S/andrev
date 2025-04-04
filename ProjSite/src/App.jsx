@@ -2,6 +2,8 @@ import { useState } from "react";
 import Header from "./First_page/Header.jsx";
 import Content from "./First_page/Content.jsx";
 import Product from "./First_page/Product.jsx";
+import Footer from "./First_page/footer.jsx";
+
 import "./index.css";
 
 function App() {
@@ -12,7 +14,7 @@ function App() {
       <Header />
       <Content />
       <Product />
-
+      <Footer/>
     </div>
   );
 }
