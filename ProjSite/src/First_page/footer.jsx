@@ -27,64 +27,116 @@ function footer() {
       </div>
 
       <div className="contato_atendimento">
-<div className="atendimento_online">
-        <FontAwesomeIcon icon={faClock} />
-        <strong>
-          atendimento loja virtual
-        </strong>
-        <span>segunda a sexta</span>
-        <strong>8h as 12h</strong>
-        <span>e das</span>
-        <strong>14h as 18h</strong>
-        <FontAwesomeIcon icon={faPhoneVolume} />
-        <strong>(47) 3305-5150</strong>
-        <FontAwesomeIcon icon={faEnvelope} />
-        <strong>sac@pichau.com.br</strong>
+        <div className="atendimento_online">
+
+          <div className="horario">
+            <div className="FontAwesomeIconicon">
+              <FontAwesomeIcon icon={faClock} />
+            </div>
+            <p>
+              <strong>
+                atendimento loja virtual
+              </strong>
+              <br />
+              <span>segunda a sexta
+                <strong> 8h as 12h </strong>
+                e das
+                <strong> 14h as 18h</strong>
+              </span>
+            </p>
+          </div>
+          <div className="telefone">
+            <div className="FontAwesomeIconicon">
+              <FontAwesomeIcon icon={faPhoneVolume} />
+            </div>
+            <strong>(47) 3305-5150</strong>
+          </div>
+          <div className="sac">
+          <div className="FontAwesomeIconicon">
+            <FontAwesomeIcon icon={faEnvelope} />
+          </div>
+            <strong>sac@pichau.com.br</strong>
+          </div>
         </div>
+
 
         <div className="atendimento_fisico">
+        <div className="FontAwesomeIconicon">
         <FontAwesomeIcon icon={faHouse} />
-<strong>loja fisica em joinville</strong>
-<strong>(47)3026-6446</strong>
-<span>segunda a sexta das 9h as 19h</span>
-<span>sabado das 9h as 13H</span>
+            </div>
+          <strong>loja fisica 
+            <br />
+            em joinville</strong>
+            <div class="separacao"></div>
+            <span>
+          <strong>(47)3026-6446 </strong>
+          <br />
+          segunda a sexta das 9h as 19h 
+          <br />
+           sabado das 9h as 13H
+
+          </span>
         </div>
       </div>
-<span>banner</span>
 
-<div className="informativos">
+      
+      <span>banner</span>
 
-<div className="praticos">
-<div className="intitucional">
-  <p>nossas lojas</p>
-  <li> <a href="">quem somos</a></li>
-  <li><a href="">localização </a></li>
-  <li><a href="">nossas lojas </a></li>
-  <li><a href="">blog </a></li>
-</div>
-<div className="intitucional">
-  <p>duvidas</p>
-  <li> <a href="">entrega</a></li>
-  <li><a href="">garantia </a></li>
-  <li><a href="">como comprar</a></li>
-  <li><a href="">formas de pagamento</a></li>
-  <li><a href="">sobre boletos</a></li>
-</div>
-<div className="intitucional">
-  <p> ajuda</p>
-  <li> <a href="">SAC</a></li>
-  <li><a href="">fale conosco </a></li>
-  <li><a href="">termos de aceite </a></li>
-  <li><a href="">politicas de privacidade </a></li>
-</div>
+      <div className="informativos">
 
+        <div className="praticos">
+          <div className="intitucional">
+            <p>nossas lojas</p>
+            <li> <a href="">quem somos</a></li>
+            <li><a href="">localização </a></li>
+            <li><a href="">nossas lojas </a></li>
+            <li><a href="">blog </a></li>
+          </div>
+          <div className="intitucional">
+            <p>duvidas</p>
+            <li> <a href="">entrega</a></li>
+            <li><a href="">garantia </a></li>
+            <li><a href="">como comprar</a></li>
+            <li><a href="">formas de pagamento</a></li>
+            <li><a href="">sobre boletos</a></li>
+          </div>
+          <div className="intitucional">
+            <p> ajuda</p>
+            <li> <a href="">SAC</a></li>
+            <li><a href="">fale conosco </a></li>
+            <li><a href="">termos de aceite </a></li>
+            <li><a href="">politicas de privacidade </a></li>
+          </div>
+        </div>
+      </div>
+      <div className="meiosPagamento">
+        <p>pagamento</p>
+        <div className="FTmeiospagamento">
+          <li>deve ter fotos dos meios de pagamento</li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </div>
+      </div>
 
-</div>
+      <div className="Informativos">
+        <p>informativos</p>
+        <strong>receba ofertas exclusivas em seu email</strong>
+        <div>
+          insira seu email
+        </div>
+        <div className="RedesSociais">
+          <span>siga-nos nas redes sociais</span>
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+        </div>
+        <p>baixe os aplicativos</p>
+        <a href=""></a>
+        <a href=""></a>
+      </div>
 
-
-
-</div>
-    
 
     </>
   )

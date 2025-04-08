@@ -1,8 +1,95 @@
-.banner_rotativo span{
+.banner_rotativo span {
     color: red;
     font-size: 55px;
 }
-.historicoDeNavegacao span{
+
+.historicoDeNavegacao span {
     color: red;
     font-size: 55px;
 }
+
+/* inicio atendimento online */
+.contato_atendimento {
+    display: flex;
+    gap: 40px;
+    left: 1500px;
+
+}
+
+.contato_atendimento .atendimento_online {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: #3a3a3d;
+    padding: 20px 30px;
+    color: white;
+    font-size: 18px;
+}
+
+.contato_atendimento .atendimento_online .horario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contato_atendimento .atendimento_online .FontAwesomeIconicon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 10px;
+    color: red;
+}
+
+.contato_atendimento .atendimento_online .telefone {
+    margin-left: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contato_atendimento .atendimento_online .sac {
+    margin-left: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* fim atendimento online */
+
+/* inicio atendimento presencial */
+    .atendimento_fisico{
+        justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: #3a3a3d;
+    padding: 20px 30px;
+    color: white;
+    font-size: 20px;
+    }
+    .atendimento_fisico .FontAwesomeIconicon{
+        position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 10px;
+    color: red;
+    }
+    .atendimento_fisico .separacao{
+        width: 1px;
+        height: 50%;
+        background: white;
+        margin: 5px;
+        
+    }
+    /* fim atendimento presencial */
+
