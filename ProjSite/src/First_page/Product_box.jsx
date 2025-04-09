@@ -1,26 +1,42 @@
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 
-let product_actual_price = "R$459,99";
-let product_image = "oi";
-let product_name =
-  "Gabinete Gamer Mancer Narok V2, Rainbow, Mid-Tower, Lateral de Vidro, Com 3 Fans, Preto, MCR-NRK-V2";
-let product_price_inline = "R$15,99";
-let product_price_vista = "R$20,99";
 
 function Product_box() {
+  // const [product, setProduct] = useState([]);
+
+  // useEffect(() => {
+  //   fetch("http://localhost:3000/api/produtos") // URL da sua API
+  //     .then((response) => response.json())
+  //     .then((data) => setProdutos(data))
+  //     .catch((error) => console.error("Erro ao buscar produtos:", error));
+  // }, []);
+
+  const products = [
+    {
+      id: 1,
+      price: "R$459,99",
+      image: "oi",
+      name: "Gabinete Gamer Mancer Narok V2, Rainbow, Mid-Tower, Lateral de Vidro, Com 3 Fans, Preto, MCR-NRK-V2",
+      price_inline: "R$15,99",
+      price_vista: "R$20,99",
+    },
+  ];
+
+  const product = products[0]
+
   return (
     <div className="product-box">
       <div className="product-img">
-        <img src={product_image} alt="Imagem do produto" />
+        <img src={product.image} alt="Imagem do produto" />
       </div>
       <div className="product-details">
-        <strong>{product_name}</strong>
-        <span>de -{product_actual_price}-</span>
+        <strong>{product.name}</strong>
+        <span>de -{product.price}-</span>
       </div>
       <div className="product-price-vista">
         <span className="vista-span">á vista </span>
         <div>
-          <strong>{product_price_vista}</strong>{" "}
+          <strong>{product.price_vista}</strong>{" "}
         </div>
         <span>no pix com 15% de desconto</span>
       </div>
@@ -28,7 +44,7 @@ function Product_box() {
       <div className="product-parcelado-inline">
         <span className="box-txt">
           em até 12x de
-          <span className="inline-payment"> {product_price_inline} </span>
+          <span className="inline-payment"> {product.price_inline} </span>
         </span>
 
         <span>sem juros no cartão</span>
