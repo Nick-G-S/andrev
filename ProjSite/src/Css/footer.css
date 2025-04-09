@@ -52,6 +52,7 @@
     align-items: center;
     justify-content: space-between;
 }
+
 .contato_atendimento .atendimento_online .sac {
     margin-left: 45px;
     display: flex;
@@ -62,17 +63,18 @@
 /* fim atendimento online */
 
 /* inicio atendimento presencial */
-    .atendimento_fisico{
-        justify-content: space-between;
+.atendimento_fisico {
+    justify-content: space-between;
     align-items: center;
     display: flex;
     background-color: #3a3a3d;
     padding: 20px 30px;
     color: white;
     font-size: 20px;
-    }
-    .atendimento_fisico .FontAwesomeIconicon{
-        position: relative;
+}
+
+.atendimento_fisico .FontAwesomeIconicon {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,13 +85,91 @@
     background-color: white;
     margin-right: 10px;
     color: red;
-    }
-    .atendimento_fisico .separacao{
-        width: 1px;
-        height: 50%;
-        background: white;
-        margin: 5px;
-        
-    }
-    /* fim atendimento presencial */
+}
 
+.atendimento_fisico .separacao {
+    width: 1px;
+    height: 50%;
+    background: white;
+    margin: 5px;
+
+}
+
+/* fim atendimento presencial */
+
+
+
+/* inicio informativos */
+.footerLiks {
+    display: flex;
+}
+
+.footerLiks p {
+    color: red;
+}
+
+.footerLiks a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerLiks li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+
+.footerLiks   p {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.footerLiks  p::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 2px;
+    background: #e90313;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footerLiks .praticos {
+    display: flex;
+    gap: 70px;
+    width: 700px;
+}
+
+.meiosPagamento {
+    width: 200px;
+}
+
+.meiosPagamento .FTmeiospagamento {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between  ;
+
+}
+
+.meiosPagamento .FTmeiospagamento li {
+    margin-bottom: 15px;
+    background: white;
+    width: 40%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0px 5px 0px;
+    
+}
+
+
+.Informativos{
+    padding: 0px 0px 0px 30px;
+}
+
+/* fim informativos */
