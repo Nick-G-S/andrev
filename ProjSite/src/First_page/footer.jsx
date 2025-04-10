@@ -4,6 +4,11 @@ import { faClock } from "@fortawesome/free-regular-svg-icons";
 import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import Pichau_Empresas from "../assets/Pichau_Empresas.png";
 import meio_pagamento1 from "../assets/meio_pagamento1.png";
 import meio_pagamento2 from "../assets/meio_pagamento2.png";
@@ -11,6 +16,8 @@ import meio_pagamento3 from "../assets/meio_pagamento3.png";
 import meio_pagamento4 from "../assets/meio_pagamento4.png";
 import meio_pagamento5 from "../assets/meio_pagamento5.png";
 import meio_pagamento6 from "../assets/meio_pagamento6.png";
+import apple_store from "../assets/apple_store.png";
+import google_play from "../assets/google_play.png";
 
 
 
@@ -136,24 +143,37 @@ function footer() {
           </div>
         </div>
 
-        <div className="Informativos">
-          <p>informativos</p>
-          <strong>receba ofertas exclusivas em seu email</strong>
-          <div>
-            insira seu email
+
+        <div className="Newsletter">
+          <p>Newsletter</p>
+          <div className="MailBox">
+            <div class="OferEmail">
+              <span>Receba ofertas exclusivas no seu e-mail</span>
+              <div class="form-box">
+                <input type="email" placeholder="E-mail" class="email-input" />
+                <button class="submit-button">
+                <FontAwesomeIcon icon={faArrowRight} />
+                </button>
+              </div>
+            </div>
           </div>
           <div className="RedesSociais">
-            <span>siga-nos nas redes sociais</span>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+            <span>Siga-nos nas redes sociais</span>
+            <a href=""><FontAwesomeIcon icon={faFacebook} /></a>
+            <a href=""><FontAwesomeIcon icon={faInstagram} /></a>
+            <a href=""><FontAwesomeIcon icon={faTwitter} /></a>
+            <a href=""><FontAwesomeIcon icon={faYoutube} /></a>
           </div>
+
+          
           <p>baixe os aplicativos</p>
-          <a href=""></a>
-          <a href=""></a>
+          <a href=""><img src={google_play}></img></a>
+          <a href=""><img src={apple_store}></img></a>
         </div>
       </div>
+
+
+    
 
     </>
   )
