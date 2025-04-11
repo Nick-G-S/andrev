@@ -1,153 +1,138 @@
-.content .wide_promo {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin-top: 15px;
+.content{
+    max-width: 100%;
 }
 
-
+.content .wide_promo {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  width: 1890px;
+}
 .content .small-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 255px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 255px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 1500px;
+  margin-left: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .content .small-container .lil-wide img {
-    width: 1500px;
+  width: 1500px;
 }
 
 .content .small-container .little img {
-    width: 740px;
+  width: 740px;
 }
 
 .content .small-container .promo img {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 .content .small-container .promo-small-container {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .content .box-containers {
-    display: flex;
-    justify-content: space-between;
-
-    margin-left: 255px;
-    margin-right: 255px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-left: 200px;
+  margin-right: 255px;
 }
 
 .content .box-containers .box {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    width: 366px;
-    height: 100px;
-    
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  overflow: hidden;
+  width: 366px;
+  height: 100px;
 }
 
 .content .box-containers .boxgaming {
-    background-color: black;
-    border-radius: 5px;
+  background-color: black;
+  border-radius: 5px;
 }
 
 .content .box-containers .box_work_station {
-    background-color: rgb(19, 50, 117);
-    border-radius: 5px;
-
+  background-color: rgb(19, 50, 117);
+  border-radius: 5px;
 }
 
 .content .box-containers .boxpichau_white {
-    background-color: rgb(30, 70, 17);
-    border-radius: 5px;
-
+  background-color: rgb(30, 70, 17);
+  border-radius: 5px;
 }
 
 .content .box-containers .boxmonte {
-    background-color: rgb(150, 29, 21);
-    border-radius: 5px;
-
+  background-color: rgb(150, 29, 21);
+  border-radius: 5px;
 }
 
 .content .box-containers .box .box-logo1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: rgb(32, 32, 32);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgb(32, 32, 32);
 }
 
 .content .box-containers .box .box-logo2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    height: 100px;
-    background-color: rgb(52, 90, 173);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 100px;
+  background-color: rgb(52, 90, 173);
 }
 
 .content .box-containers .box .box-logo3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: rgb(51, 117, 30);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgb(51, 117, 30);
 }
 
 .content .box-containers .box .box-logo4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: rgb(194, 40, 30);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgb(194, 40, 30);
 }
 
 .content .box-containers .box .box-logo img {
-    width: 70px;
+  width: 70px;
 }
 
 .content .box-containers .box .box-txt {
-    flex: 1 1 0%;
-    display: flex;
-    flex-direction: column;
-    text-transform: uppercase;
-    color: white;
-    padding: 16px 32px 16px 16px;
-    text-align: center;
-    align-items: center;
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: white;
+  padding: 16px 32px 16px 16px;
+  text-align: center;
+  align-items: center;
 }
 
 .content .box-containers .box .box-txt strong {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .content .box-containers .box .box-txt span {
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-
-
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
