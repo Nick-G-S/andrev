@@ -18,6 +18,11 @@ import meio_pagamento5 from "../assets/meio_pagamento5.png";
 import meio_pagamento6 from "../assets/meio_pagamento6.png";
 import apple_store from "../assets/apple_store.png";
 import google_play from "../assets/google_play.png";
+import logo from "../assets/pichau-logo.png";
+import certificado1 from "../assets/certificado1.png";
+import certificado2 from "../assets/certificado2.png";
+import certificado3 from "../assets/certificado3.png";
+import certificado4 from "../assets/certificado4.png";
 
 
 
@@ -29,12 +34,6 @@ function footer() {
 
   return (
     <>
-      <div className="banner_rotativo">
-        <span>
-          lugar que deve ficar o banner rotativo
-        </span>
-      </div>
-
       <div className="historicoDeNavegacao">
         <span>
           historico de navegação
@@ -152,7 +151,7 @@ function footer() {
               <div class="form-box">
                 <input type="email" placeholder="E-mail" class="email-input" />
                 <button class="submit-button">
-                <FontAwesomeIcon icon={faArrowRight} />
+                  <FontAwesomeIcon icon={faArrowRight} />
                 </button>
               </div>
             </div>
@@ -165,15 +164,51 @@ function footer() {
             <a href=""><FontAwesomeIcon icon={faYoutube} /></a>
           </div>
 
-          
-          <p>baixe os aplicativos</p>
-          <a href=""><img src={google_play}></img></a>
-          <a href=""><img src={apple_store}></img></a>
+          <div className="Linkapps">
+            <p>baixe os aplicativos</p>
+            <a href=""><img src={google_play}></img></a>
+            <a href=""><img src={apple_store}></img></a>
+          </div>
         </div>
+
+
+
       </div>
 
+      <div className="EndPage">
+        <div>
+          <img className="pichau-logo" src={logo} alt="Pichau-logo" />
+        </div>
+        <div className="dados">
 
-    
+          <p>PICHAU INFORMÁTICA® É UMA MARCA REGISTRADA DE BAZAM E PICHAU INFORMATICA LTDA | CNPJ: 09.376.495/0001-22</p>
+
+          <address>Avenida Santos Dumont, 7199 - Aventureiro, Joinville - SC - 89226-435</address>
+          <span className='RiscoVertical '></span>
+
+          <div className="teste"><span>
+            Preços e condições de pagamento exclusivos para compras via internet e podem 
+            variar nas lojas físicas. Os preços anunciados neste site ou via e-mail promocional 
+            podem ser alterados sem prévio aviso. A Pichau Informática, não é responsável por erros descritivos. 
+            As fotos contidas nesta página são meramente ilustrativas do produto e podem variar de acordo com o  
+            fornecedor/lote do fabricante. Ofertas válidas até o término de nossos estoques. Vendas sujeitas à análise e confirmação de dados.
+            <br />
+            <br />
+            Made with ❤ by Pichau & Heerdt</span></div>
+
+        </div>
+        <div className="seguranca">
+          <p>Certificados de segurança</p>
+          <span className='RiscoVertical '></span>
+          <div className="certificados">
+            <a href=""><img src={certificado1} /></a>
+            <a href=""><img src={certificado2} /></a>
+            <a href=""><img src={certificado3} /></a>
+            <a href=""><img src={certificado4} /></a>
+          </div>
+        </div>
+      </div >
+
 
     </>
   )
