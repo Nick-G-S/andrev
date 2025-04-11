@@ -74,18 +74,18 @@ function Header() {
             </span>
           </div> */}
 
-<button className="ShoppingCar">
-  <span className="icon">
-    <FontAwesomeIcon icon={faCartShopping} size="lg" />
-  </span>
-  <span className="text">
-    <strong>CARRINHO</strong>
-    <span>0 PRODUTO</span>
-  </span>
-  <span className="arrow">
-    <FontAwesomeIcon icon={faChevronDown} size="sm" />
-  </span>
-</button>
+            <button className="ShoppingCar">
+              <span className="icon">
+                <FontAwesomeIcon icon={faCartShopping} size="lg" />
+              </span>
+              <span className="text">
+                <strong>CARRINHO</strong>
+                <span>0 PRODUTO</span>
+              </span>
+              <span className="arrow">
+                <FontAwesomeIcon icon={faChevronDown} size="sm" />
+              </span>
+            </button>
           </div>
         </header>
 
@@ -103,16 +103,21 @@ function Header() {
             </div>
           </button>
 
+
+
+          
+
           <div className="search">
             <input placeholder="digite o que você procura..." type="text" />
           </div>
+
+
         </header>
       </div>
     </>
   );
 }
 
-//<input aria-invalid="false" autocomplete="off" id=":R6l8pbb:" placeholder="Digite o que você procura..." type="text" aria-autocomplete="both" aria-expanded="false" autocapitalize="none" spellcheck="false" role="combobox" value=""></input>
 
 // magnifying glass
 export default Header;

@@ -1,123 +1,57 @@
-.home {
-  margin-left: 40px;
-  padding-top: 5px;
-  margin-right: 255px;
-}
-
-
-.home .header-under .departamentos {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px;
-  border-radius: 7px;
-  height: 63px;
-  width: 350px;
-  outline: 0;
-  border: solid 3px red;
-  margin: 0;
-  cursor: pointer;
-  background-color: red;
-
-}
-
-.home .header-under .departamentos:hover {
-  background-color: rgb(150, 0, 0);
-}
-
-.home .header-under {
-  display: flex;
-  justify-content: space-between;
-}
-
-.home .header-under .departamentos .dep-bars {
-  margin-left: 10px;
-  height: 28px;
-}
-
-.home .header-under .departamentos .dep-words {
-  display: flex;
-  width: 200px;
-  flex-direction: column;
-  color: white;
-  align-items: end;
-}
-
-.home .header-under .departamentos .dep-words strong {
-  font-size: 1.7em;
-}
-
-
-/* barra de busca */
-
-.home .header-under  .search {
-
-  
-    display: inline-flex;
-    align-items: center;
-    width: 70%;
-    border-radius: 4px;
-    background: rgb(66, 66, 66);
-    border: rgb(66, 66, 66);
-}
-
-
-.home .header-under  .search input {
- padding: 10px;
- text-align: left;
-border-radius:4px ;
-opacity: 1;
-background: rgb(66, 66, 66);
-border: rgb(66, 66, 66);
-color: white;
-outline: 0;
-display: flex;
-justify-content: center;
-width:900px;
-display: inline-flex;
-font-size: 20px;
-}
-
-
-
-
-/* options header-upper */
-
-.home .header-upper {
-  display: flex;
-  justify-content: space-between;
+/* Fixar os headers */
+.header-upper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
   height: 78px;
+  display: flex;
+  justify-content: center;
+  gap: 400px;
+  background-color: #303030;
 }
 
-.home .header-upper .logo-container .pichau-logo {
+.header-under {
+  position: fixed;
+  top: 78px;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  padding: 10px 40px 10px 280px;
+  background-color: #303030;
+  gap: 30px;
+  width: 100%;
+}
+
+
+/* Resto dos estilos permanece igual ao seu CSS original */
+
+.pichau-logo {
   width: 215px;
+  padding: 20px 90px 0px 0px;
 }
 
-.home .header-upper .options {
+.options {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 5px;
   cursor: pointer;
   color: white;
   font-size: 13px;
-
 }
 
-
-
-.home .header-upper .options div {
+.options div {
   display: flex;
   align-items: center;
   text-align: left;
 }
 
-.home .header-upper .options button {
+.options button {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  outline: 0;
   border: 0;
   cursor: pointer;
   border-radius: 50%;
@@ -125,21 +59,18 @@ font-size: 20px;
   font-size: 20px;
 }
 
-.home .header-upper .options span {
+.options span {
   font-size: 10px;
   text-transform: uppercase;
 }
 
-.home .header-upper .options strong {
+.options strong {
   font-size: 15px;
   font-weight: bold;
   display: block;
 }
 
-
-/* carrinho */
-
-.home .header-upper .options .ShoppingCar {
+.home .header-upper .ShoppingCar {
   color: white;
   background-color: #009e2a;
   padding: 10px 20px;
@@ -147,39 +78,90 @@ font-size: 20px;
   display: flex;
   align-items: center;
   border: none;
-  gap: 8px;  
+  gap: 8px;
   cursor: pointer;
-  min-width: 140px; 
+  min-width: 140px;
   justify-content: space-between;
 }
 
-.home .header-upper .options .ShoppingCar .icon {
-  display: flex;
-  align-items: center;
-  font-size: 18px;
+.ShoppingCar .icon {
+  font-size: 20px;
+  padding-right: 10px;
 }
 
-.home .header-upper .options .ShoppingCar .text {
+.ShoppingCar .text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: left;  
+  text-align: left;
 }
 
-.home .header-upper .options .ShoppingCar .text strong {
-  font-size: 14px;
-  text-transform: uppercase;
+.ShoppingCar .text strong {
+  font-size: 20px;
 }
 
-.home .header-upper .options .ShoppingCar .text span {
+.ShoppingCar .text span {
   font-size: 10px;
-  text-transform: uppercase;
 }
 
-.home .header-upper .options .ShoppingCar .arrow {
+.ShoppingCar .arrow {
   font-size: 14px;
   margin-left: auto;
 }
 
+/* Botão departamentos */
+.departamentos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  border-radius: 7px;
+  height: 63px;
+  width: 350px;
+  border: solid 3px red;
+  cursor: pointer;
+  background-color: red;
+}
 
+.departamentos:hover {
+  background-color: rgb(150, 0, 0);
+}
 
+.departamentos .dep-bars {
+  margin-left: 10px;
+  height: 28px;
+}
+
+.departamentos .dep-words {
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  color: white;
+  align-items: end;
+}
+
+.departamentos .dep-words strong {
+  font-size: 1.7em;
+}
+
+/* Barra de busca */
+.search {
+  display: inline-flex;
+  align-items: flex-start;
+  border-radius: 4px;
+  background: rgb(66, 66, 66);
+  border: rgb(66, 66, 66);
+  height: 30px;
+  margin-top: 20px;
+}
+
+.search input {
+  padding: 10px;
+  border-radius: 4px;
+  background: rgb(66, 66, 66);
+  border: none;
+  color: white;
+  outline: 0;
+  width: 1068px;
+  font-size: 20px;
+}
