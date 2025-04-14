@@ -1,27 +1,59 @@
-.account{
-    height: 10000px;
-    background-color: #303030;
+.account {
+  height: 10000px;
+  background-color: #303030;
 }
 
-.account .login-container{
-    margin-top: 55px;
+.account .login-container {
+  margin-top: 164px;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+}
+
+.account .login-container .login {
+  background-color: aliceblue;
+  width: 436px;
+  height: 484px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+}
+.account .login-container .login  .txt-box {
     display: flex;
-    justify-content: center;
-    align-content: center;
-    gap: 20px;
-
-}
-
-.account .login-container .login{
+    flex-direction: column;
     
+  }
+.account .login-container .login .input-box {
+  display: flex;
+  flex-direction: column;
 }
 
-.account .login-container .login .lock-icon{
-    background-color: red;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100%;
+.account .login-container .login .lock-icon {
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+.account .login-container .cadastro {
+  width: 436px;
+  height: 484px;
+  background-color: aqua;
+}
+
+.account .login-container .cadastro .lock-icon {
+  background-color: green;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
 }
