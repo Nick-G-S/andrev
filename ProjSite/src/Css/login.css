@@ -13,7 +13,7 @@
 }
 
 .account .login-container .login {
-  background-color: aliceblue;
+  background-color: blue;
   width: 436px;
   height: 484px;
   display: flex;
@@ -22,14 +22,53 @@
   align-items: center;
   text-align: center;
 }
-.account .login-container .login  .txt-box {
-    display: flex;
-    flex-direction: column;
-    
-  }
-.account .login-container .login .input-box {
+.account .login-container .login .txt-box {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+}.account .login-container .login .txt-box .generic-txt{
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.account .login-container .login .input-box {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+} .account .login-container .login .input-box input {
+  font: inherit;
+  letter-spacing: inherit;
+  color: currentcolor;
+  border: 0px;
+  box-sizing: content-box;
+  background: none;
+  height: 1.4375em;
+  margin: 0px;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  min-width: 0px;
+  animation-name: mui-auto-fill-cancel;
+  animation-duration: 10ms;
+  padding: 16.5px 14px;
+}
+
+.account .login-container .login .check-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+} .account .login-container .login .check-box input {
+  
 }
 
 .account .login-container .login .lock-icon {

@@ -17,14 +17,14 @@ function Login() {
             <div className="lock-icon">
               <FontAwesomeIcon icon={faLock} size="lg" color="#303030" />
             </div>
-            <div>Ja tem uma conta?</div>
+            <div className="generic-txt">Ja tem uma conta?</div>
             <div>informe os seus dados abaixo para acessá-la.</div>
           </div>
           <div className="input-box">
             <input type="text" placeholder="Email*" />
             <input type="text" placeholder="Senha*" />
           </div>
-          <div className="checkbox-box">
+          <div className="check-box">
             <input type="checkbox" />
             <span>Lembrar meus dados</span>
           </div>
