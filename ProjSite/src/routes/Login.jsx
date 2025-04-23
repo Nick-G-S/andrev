@@ -24,15 +24,14 @@ function Login() {
             <input type="text" placeholder="Email*" />
             <input type="text" placeholder="Senha*" />
           </div>
-          <div className="check-box">
-            <input type="checkbox" />
+          <label className="custom-checkbox">
+            <input type="checkbox" className="checkbox" />
+            <span className="checkmark"></span>
             <span>Lembrar meus dados</span>
-          </div>
-          <div>
-            <button>ACESSAR CONTA</button>
-          </div>
-          <div>
-            <button>Esqueci minha senha</button>
+          </label>
+          <div className="btn-box">
+            <button className="btn-1">ACESSAR CONTA</button>
+            <button className="btn-2">Esqueci minha senha</button>
           </div>
         </div>
 

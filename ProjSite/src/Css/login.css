@@ -13,7 +13,6 @@
 }
 
 .account .login-container .login {
-  background-color: blue;
   width: 436px;
   height: 484px;
   display: flex;
@@ -59,16 +58,107 @@
   padding: 16.5px 14px;
 }
 
-.account .login-container .login .check-box {
+/* Container do checkbox do login */
+.custom-checkbox {
+  margin-top: 20px;
+  display: inline-block;
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Hide the default checkbox */
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Custom checkbox style */
+.custom-checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: transparent;
+  box-shadow: 0 0 0 2px white inset; /* Simulated white border */
+  border-radius: 4px;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* When checked: fill red and remove white border */
+.custom-checkbox input:checked ~ .checkmark {
+  background-color: red;
+  box-shadow: none;
+}
+
+/* Checkmark do checkbox do login */
+.custom-checkbox .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 5px;
+  top: 2px;
+  width: 4px;
+  height: 8px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Show checkmark when checked */
+.custom-checkbox input:checked ~ .checkmark::after {
+  display: block;
+}
+
+/* Container do botoes de login */
+.btn-box {
+  margin-top: 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   gap: 10px;
   width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+} .btn-box .btn-1{  /* Container do botão de login (ACESSAR CONTA) */
+  background-color: red;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  width: 100%;
+  box-shadow: #000 0px 1px 0px 1px;
+} .btn-box .btn-1:hover{
+  cursor: pointer;
+  background-color: rgb(160, 0, 0) ;
+}
 
-} .account .login-container .login .check-box input {
-  
+.btn-box .btn-2{  /* Container do botão de login (Esqueci minha senha) */
+  background-color: transparent;
+  text-decoration: underline;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: rgba(255, 0, 0, 0.702);
+  width: 100%;
+} .btn-box .btn-2:hover{
+  cursor: pointer;
+}
+
+
+
+.account .login-container .login .check-box .checkbox:checked::before {
+  content: '';
+  position: absolute;
+  display: block;
+  background-color: red;
+  top: 2px;
+  left: 4px;
+  width: 4px;
+  height: 8px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 
 .account .login-container .login .lock-icon {
@@ -81,13 +171,22 @@
   border-radius: 100%;
 }
 
+/* Fim do login */
+
+/* comeco cadastro */
 .account .login-container .cadastro {
   width: 436px;
   height: 484px;
   background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
 .account .login-container .cadastro .lock-icon {
+  margin-top: 20px;
   background-color: green;
   width: 50px;
   height: 50px;
