@@ -26,7 +26,7 @@ function Header() {
           </span>
           <div className="options">
             <div className="contAcess">
-              <button>
+              <button href="/account">
                 <FontAwesomeIcon icon={faCircleUser} color="red" />
               </button>
               <span>

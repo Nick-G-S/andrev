@@ -1,7 +1,7 @@
 import Header from "../First_page/Header.jsx";
 import "../Css/login.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLock } from "@fortawesome/free-solid-svg-icons";
+import { faLock, faUserPlus } from "@fortawesome/free-solid-svg-icons";
 
 function Login() {
   return (
@@ -15,18 +15,18 @@ function Login() {
         <div className="login">
           <div className="txt-box">
             <div className="lock-icon">
-              <FontAwesomeIcon icon={faLock} size="lg" />
+              <FontAwesomeIcon icon={faLock} size="lg" color="#303030" />
             </div>
-            <div>Ja tem uma conta?</div>
+            <div className="generic-txt">Ja tem uma conta?</div>
             <div>informe os seus dados abaixo para acessá-la.</div>
           </div>
           <div className="input-box">
             <input type="text" placeholder="Email*" />
             <input type="text" placeholder="Senha*" />
           </div>
-          <div className="checkbox-box">
+          <div className="check-box">
             <input type="checkbox" />
-            <span>Lmbrar meus dados</span>
+            <span>Lembrar meus dados</span>
           </div>
           <div>
             <button>ACESSAR CONTA</button>
@@ -37,8 +37,15 @@ function Login() {
         </div>
 
         <div className="cadastro">
-
-            
+          <div className="lock-icon">
+            <FontAwesomeIcon icon={faUserPlus} size="lg" color="#303030" />
+          </div>
+          <div>Novo Cliente</div>
+          <div>
+            Criar uma conta é fácil! Informe seus dados e uma senha para
+            aproveitar todos os beneficios de ter uma conta.
+          </div>
+          <button>CADASTRE-SE</button>
         </div>
       </div>
     </div>
