@@ -1,4 +1,4 @@
-/* Fixar os headers */
+
 .header-upper {
   position: fixed;
   top: 0;
@@ -24,8 +24,6 @@
   width: 100%;
 }
 
-
-/* Resto dos estilos permanece igual ao seu CSS original */
 
 .pichau-logo {
   width: 215px;

@@ -1,4 +1,4 @@
-
+/* caixa do produto inicio */
 .product .txt {
   display: flex;
   align-items: center;
@@ -82,4 +82,4 @@
   grid-template-columns: repeat(6, 1fr); /* 6 colunas de largura igual */
   gap: 27px; /* Espaço entre os itens (opcional) */
 }
-
+/* caixa do produto fim */
