@@ -8,14 +8,19 @@ import { faMoon } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faCircleQuestion } from "@fortawesome/free-solid-svg-icons";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { faTimes, faGear } from "@fortawesome/free-solid-svg-icons";
 import logo from "../assets/pichau-logo.png";
 
 import "../Css/header.css";
 
 function Header() {
   const [count, setCount] = useState(0);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [openCategory, setOpenCategory] = useState(null);
+  const toggleCategory = (category) => {
+    setOpenCategory(openCategory === category ? null : category); // Alterna entre abrir e fechar
+  };
 
   return (
     <>
@@ -89,34 +94,101 @@ function Header() {
           </div>
         </header>
 
-        <header className="header-under">
-          <button className="departamentos">
-            <div className="dep-bars">
-              <FontAwesomeIcon icon={faBars} size="2x" color="white" />
+
+
+        <div>
+          <header className="header-under">
+            {/* Botão Departamentos */}
+            <button className="departamentos" onClick={() => setSidebarOpen(true)}>
+              <div className="dep-bars">
+                <FontAwesomeIcon icon={faBars} size="2x" color="white" />
+              </div>
+              <div className="dep-words">
+                <div>ACESSE TODOS OS</div>
+                <strong>DEPARTAMENTOS</strong>
+              </div>
+              <div className="dep-arrow">
+                <FontAwesomeIcon icon={faAngleRight} color="white" />
+              </div>
+            </button>
+
+            {/* Barra de busca */}
+            <div className="search">
+              <input placeholder="digite o que você procura..." type="text" />
             </div>
-            <div className="dep-words">
-              <div>ACESSE TODOS OS</div>
-              <strong>DEPARTAMENTOS</strong>
+          </header>
+
+          {/* Sidebar */}
+          <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
+            <div>
+              <div className="SidebarLogo"><img className="pichau-logo-Sidebar" src={logo} alt="Pichau-logo" />
+              <span className="logo-container">
+                <button className="close-btn" onClick={() => setSidebarOpen(false)}>
+                  <FontAwesomeIcon icon={faTimes} size="lg" />
+                </button>
+              </span>
+              </div>
+              <div className="teste">
+                <button className="MontePC" onClick={() => setSidebarOpen(true)}>
+                  <div className="IconGear">
+                    <FontAwesomeIcon icon={faGear} />
+                  </div>
+                  <strong>MONTE SEU PC</strong>
+                </button>
+              </div>
             </div>
-            <div className="dep-arrow">
-              <FontAwesomeIcon icon={faAngleRight} color="white" />
-            </div>
-          </button>
+            <h2>CATEGORIAS</h2>
+            <ul className="menu">
+              <li onClick={() => toggleCategory("eletronicos")}>
+                Eletrônicos
+                {openCategory === "eletronicos" && (
+                  <ul className="submenu">
+                    <li>Celulares</li>
+                    <li>TVs</li>
+                    <li>Notebooks</li>
+                  </ul>
+                )}
+              </li>
 
+              <li onClick={() => toggleCategory("moda")}>
+                Moda
+                {openCategory === "moda" && (
+                  <ul className="submenu">
+                    <li>Feminina</li>
+                    <li>Masculina</li>
+                    <li>Infantil</li>
+                  </ul>
+                )}
+              </li>
 
+              <li onClick={() => toggleCategory("casa")}>
+                Casa e Jardim
+                {openCategory === "casa" && (
+                  <ul className="submenu">
+                    <li>Móveis</li>
+                    <li>Decoração</li>
+                    <li>Iluminação</li>
+                  </ul>
+                )}
+              </li>
 
-          
-
-          <div className="search">
-            <input placeholder="digite o que você procura..." type="text" />
+              <li>Esportes</li>
+              <li>Automotivo</li>
+            </ul>
           </div>
 
+          {/* Fundo escuro */}
+          {sidebarOpen && <div className="overlay" onClick={() => setSidebarOpen(false)} />}
+        </div>
 
-        </header>
+
+
       </div>
     </>
   );
 }
+
+
 
 
 // magnifying glass

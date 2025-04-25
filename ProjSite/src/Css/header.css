@@ -163,3 +163,163 @@
   width: 1068px;
   font-size: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 330px;
+  height: 100%;
+  background-color: #605c5c; 
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.pichau-logo-Sidebar {
+  width: 215px;
+  padding: 10px 0px 0px 15px;
+  
+}
+.sidebar.open .SidebarLogo{
+display: flex;
+}
+
+.sidebar.open .SidebarLogo .close-btn{
+padding: 25px 0px 0px 45px ;
+font-size: 25px;
+}
+
+.sidebar.open h2 {
+  padding: 15px 0px 15px 0px;
+  color: white;
+  font-size: 12px;
+}
+
+.sidebar.open .teste {
+  background-color: transparent; /* Sem fundo inicialmente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar.open .teste:hover {
+  background-color: black; /* Fica preto ao passar o mouse */
+}
+
+.sidebar.open .teste .MontePC {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 26px;
+  border-radius: 10px;
+  height: 45px;
+  width: 280px;
+  border: 2px solid red;
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar.open .teste .MontePC .IconGear {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+.sidebar.open .MontePC .IconGear{
+padding: 0px 8px 0px 0px;
+color: white;
+font-size: 20px;
+align-items: center;
+justify-content: center;
+}
+.sidebar.open .MontePC strong{
+  color: white;
+  font-size: 20px;
+  }
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu > li {
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.submenu {
+  list-style: none;
+  padding-left: 15px;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: normal;
+  color: white;
+}
+
+.submenu li {
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  float: right;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+/* fim sidebar */
