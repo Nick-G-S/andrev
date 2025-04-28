@@ -9,7 +9,7 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faCircleQuestion } from "@fortawesome/free-solid-svg-icons";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import { faTimes, faGear } from "@fortawesome/free-solid-svg-icons";
+import { faTimes, faGear, faMicrochip } from "@fortawesome/free-solid-svg-icons";
 import logo from "../assets/pichau-logo.png";
 
 import "../Css/header.css";
@@ -122,13 +122,13 @@ function Header() {
           <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
             <div>
               <div className="SidebarLogo"><img className="pichau-logo-Sidebar" src={logo} alt="Pichau-logo" />
-              <span className="logo-container">
-                <button className="close-btn" onClick={() => setSidebarOpen(false)}>
-                  <FontAwesomeIcon icon={faTimes} size="lg" />
-                </button>
-              </span>
+                <span className="logo-container">
+                  <button className="close-btn" onClick={() => setSidebarOpen(false)}>
+                    <FontAwesomeIcon icon={faTimes} size="lg" />
+                  </button>
+                </span>
               </div>
-              <div className="teste">
+              <div className="ButtonMontarPC">
                 <button className="MontePC" onClick={() => setSidebarOpen(true)}>
                   <div className="IconGear">
                     <FontAwesomeIcon icon={faGear} />
@@ -139,41 +139,52 @@ function Header() {
             </div>
             <h2>CATEGORIAS</h2>
             <ul className="menu">
-              <li onClick={() => toggleCategory("eletronicos")}>
-                Eletrônicos
+              <li onClick={() => toggleCategory("eletronicos")} >
+                <div className="IconSidebar">
+                  <FontAwesomeIcon icon={faMicrochip} />
+                </div>
+                Hardwere
+              </li>
+              <li>
                 {openCategory === "eletronicos" && (
                   <ul className="submenu">
-                    <li>Celulares</li>
-                    <li>TVs</li>
-                    <li>Notebooks</li>
+                    <li>processadores</li>
+                    <li>Placa Mãe</li>
+                    <li>Memórias</li>
+                    <li>Placa de Vídeo</li>
+                    <li>Disco Rígido interno (HD)</li>
+                    <li>SSD</li>
+                    <li>Gabinete</li>
+                    <li>Fonte</li>
+                    <li>Cabos Estensores Sleeved</li>
+                    <li>Coolers e Whatercoolers</li>
+                    <li>Ventoinhas e Casemod</li>
+                    <li>Pasta Térmica e Refrigerantes</li>
+                    <li>Placas de Som</li>
+                    <li>Drive Óptico</li>
+                    <li>Acessórios para Gabinete</li>
+                    <li>Ver Todos</li>
                   </ul>
                 )}
               </li>
 
-              <li onClick={() => toggleCategory("moda")}>
-                Moda
-                {openCategory === "moda" && (
-                  <ul className="submenu">
-                    <li>Feminina</li>
-                    <li>Masculina</li>
-                    <li>Infantil</li>
-                  </ul>
-                )}
-              </li>
-
-              <li onClick={() => toggleCategory("casa")}>
-                Casa e Jardim
-                {openCategory === "casa" && (
-                  <ul className="submenu">
-                    <li>Móveis</li>
-                    <li>Decoração</li>
-                    <li>Iluminação</li>
-                  </ul>
-                )}
-              </li>
-
-              <li>Esportes</li>
-              <li>Automotivo</li>
+              <li>Perifericos</li>
+              <li >Computadores</li>
+              <li>Kit Upgrade</li>
+              <li>monitores</li>
+              <li>Cadeiras e Mesas Gamer e Escritoio</li>
+              <li>Eletronicos</li>
+              <li>Notbookes e Potáteis</li>
+              <li>Mochilas</li>
+              <li>Video Games</li>
+              <li>REdes e Wuireles</li>
+              <li>Realidade Virtual</li>
+              <li>Casa Inteligente</li>
+              <li>Casa e Lazer</li>
+              <li>Openbox</li>
+              <li>Pets</li>
+              <li>Vestuario</li>
+              <li>Marcas</li>
             </ul>
           </div>
 

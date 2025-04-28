@@ -1,4 +1,3 @@
-
 .header-upper {
   position: fixed;
   top: 0;
@@ -191,7 +190,7 @@
   left: 0;
   width: 330px;
   height: 100%;
-  background-color: #605c5c; 
+  background-color: #605c5c;
   box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3);
   z-index: 1001;
   transform: translateX(-100%);
@@ -209,41 +208,29 @@
 .pichau-logo-Sidebar {
   width: 215px;
   padding: 10px 0px 0px 15px;
-  
-}
-.sidebar.open .SidebarLogo{
-display: flex;
 }
 
-.sidebar.open .SidebarLogo .close-btn{
-padding: 25px 0px 0px 45px ;
-font-size: 25px;
+.sidebar.open .SidebarLogo {
+  display: flex;
+}
+
+.sidebar.open .SidebarLogo .close-btn {
+  padding: 25px 0px 0px 45px;
+  font-size: 25px;
 }
 
 .sidebar.open h2 {
-  padding: 15px 0px 15px 0px;
+  padding: 15px 0px 15px 15px;
   color: white;
-  font-size: 12px;
+  font-size: 13px;
 }
 
-.sidebar.open .teste {
-  background-color: transparent; /* Sem fundo inicialmente */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0;
-  transition: background-color 0.3s ease;
-}
 
-.sidebar.open .teste:hover {
-  background-color: black; /* Fica preto ao passar o mouse */
-}
-
-.sidebar.open .teste .MontePC {
+.sidebar.open .ButtonMontarPC .MontePC {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px 26px;
+  padding: 30px 26px;
   border-radius: 10px;
   height: 45px;
   width: 280px;
@@ -256,47 +243,67 @@ font-size: 25px;
   transition: all 0.3s ease;
 }
 
-.sidebar.open .teste .MontePC .IconGear {
+
+.sidebar.open .ButtonMontarPC {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  transition:  0.5s ease;
+}
+
+.sidebar.open .ButtonMontarPC:hover {
+  background-color: #1b1e23;
+}
+.sidebar.open .ButtonMontarPC .MontePC:hover {
+  background-color: rgb(150, 0, 0);
+}
+.sidebar.open .ButtonMontarPC .MontePC .IconGear {
   margin-right: 10px;
   display: flex;
   align-items: center;
 }
 
-
-
-
-.sidebar.open .MontePC .IconGear{
-padding: 0px 8px 0px 0px;
-color: white;
-font-size: 20px;
-align-items: center;
-justify-content: center;
-}
-.sidebar.open .MontePC strong{
+.sidebar.open .MontePC .IconGear {
+  padding: 0px 8px 0px 0px;
   color: white;
   font-size: 20px;
-  }
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar.open .MontePC strong {
+  color: white;
+  font-size: 20px;
+}
 
 .menu {
   list-style: none;
   padding: 0;
 }
 
-.menu > li {
+.menu>li {
   cursor: pointer;
   font-size: 18px;
   margin-bottom: 10px;
   font-weight: bold;
   color: white;
+  display: flex;
+}
+.menu .IconSidebar {
+padding: 0px 10px 0px 10px;
+
 }
 
-.submenu {
+.submenu li {
   list-style: none;
   padding-left: 15px;
   margin-top: 5px;
   font-size: 16px;
   font-weight: normal;
   color: white;
+  padding: 0px 0px 0px 35px;
 }
 
 .submenu li {
@@ -313,13 +320,6 @@ justify-content: center;
   color: white;
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1000;
-}
+
+
 /* fim sidebar */
