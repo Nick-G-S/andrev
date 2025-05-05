@@ -21,8 +21,14 @@ function Login() {
             <div>informe os seus dados abaixo para acessá-la.</div>
           </div>
           <div className="input-box">
-            <input type="text" placeholder="Email*" />
-            <input type="text" placeholder="Senha*" />
+            <div className="input-group">
+              <input type="text" id="email" required />
+              <label htmlFor="email">Email*</label>
+            </div>
+            <div className="input-group">
+              <input type="password" id="senha" required />
+              <label htmlFor="senha">Senha*</label>
+            </div>
           </div>
           <label className="custom-checkbox">
             <input type="checkbox" className="checkbox" />

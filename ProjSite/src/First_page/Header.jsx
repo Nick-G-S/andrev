@@ -89,66 +89,76 @@ function Header() {
   ];
 
   return (
-    <div className="home">
-      <header className="header-upper">
-        <span className="logo-container">
-          <img className="pichau-logo" src={logo} alt="Pichau-logo" />
-        </span>
-        <div className="options">
-          <div className="contAcess">
-            <button href="/account">
-              <FontAwesomeIcon icon={faCircleUser} color="red" />
-            </button>
+    <>
+      <div className="home">
+        <header className="header-upper">
+          <span className="logo-container">
+            <img className="pichau-logo" src={logo} alt="Pichau-logo" />
+          </span>
+          <div className="options">
+            <div className="contAcess">
+              <a href="/account" >
+                <FontAwesomeIcon icon={faCircleUser} color="red" />
+              </a>
+              <span>
+                Minha Conta
+                <br />
+                <strong>Entrar / Cadastro</strong>
+              </span>
+            </div>
+            <div className="contact">
+              <a>
+                <FontAwesomeIcon icon={faCircleQuestion} color="red" />
+              </a>
+              <span>
+                Atendimento
+                <br />
+                <strong>Ao cliente</strong>
+              </span>
+            </div>
+            <div className="favoritos">
+              <a>
+                <FontAwesomeIcon icon={faHeart} color="red" />
+              </a>
+              <span>
+                <span>
+                  meus
+                  <br />
+                  <strong>favoritos</strong>
+                </span>
+              </span>
+            </div>
+            <div className="fundo">
+              <button>
+                <FontAwesomeIcon icon={faMoon} color="red" />
+              </button>
+              <span>
+                Modo
+                <br />
+                <strong>Escuro</strong>
+              </span>
+            </div>
+            {/* <div className="fundo">
+            <FontAwesomeIcon icon={faSun} />
             <span>
-              Minha Conta
-              <br />
-              <strong>Entrar / Cadastro</strong>
+              Modo<strong>Claro</strong>
             </span>
-          </div>
-          <div className="contact">
-            <button>
-              <FontAwesomeIcon icon={faCircleQuestion} color="red" />
+          </div> */}
+
+            <button className="ShoppingCar">
+              <span className="icon">
+                <FontAwesomeIcon icon={faCartShopping} size="lg" />
+              </span>
+              <span className="text">
+                <strong>CARRINHO</strong>
+                <span>0 PRODUTO</span>
+              </span>
+              <span className="arrow">
+                <FontAwesomeIcon icon={faChevronDown} size="sm" />
+              </span>
             </button>
-            <span>
-              Atendimento
-              <br />
-              <strong>Ao cliente</strong>
-            </span>
           </div>
-          <div className="favoritos">
-            <button>
-              <FontAwesomeIcon icon={faHeart} color="red" />
-            </button>
-            <span>
-              meus
-              <br />
-              <strong>favoritos</strong>
-            </span>
-          </div>
-          <div className="fundo">
-            <button>
-              <FontAwesomeIcon icon={faMoon} color="red" />
-            </button>
-            <span>
-              Modo
-              <br />
-              <strong>Escuro</strong>
-            </span>
-          </div>
-          <button className="ShoppingCar">
-            <span className="icon">
-              <FontAwesomeIcon icon={faCartShopping} size="lg" />
-            </span>
-            <span className="text">
-              <strong>CARRINHO</strong>
-              <span>0 PRODUTO</span>
-            </span>
-            <span className="arrow">
-              <FontAwesomeIcon icon={faChevronDown} size="sm" />
-            </span>
-          </button>
-        </div>
-      </header>
+        </header>
 
       <header className="header-under">
         <button className="departamentos" onClick={() => setSidebarOpen(true)}>

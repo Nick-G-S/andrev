@@ -44,7 +44,7 @@
   text-align: left;
 }
 
-.options button {
+.options a, .options button {
   display: flex;
   align-items: center;
   justify-content: center;

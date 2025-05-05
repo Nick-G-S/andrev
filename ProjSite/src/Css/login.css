@@ -41,21 +41,59 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-} .account .login-container .login .input-box input {
-  font: inherit;
-  letter-spacing: inherit;
-  color: currentcolor;
-  border: 0px;
-  box-sizing: content-box;
-  background: none;
-  height: 1.4375em;
-  margin: 0px;
-  -webkit-tap-highlight-color: transparent;
-  display: block;
-  min-width: 0px;
-  animation-name: mui-auto-fill-cancel;
-  animation-duration: 10ms;
-  padding: 16.5px 14px;
+}/* Grupo do input + label */
+
+.input-group {
+  position: relative;
+  gap: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  width: 100%;
+}
+
+/* Input estilizado */
+.input-group input {
+  width: 100%;
+  padding: 16px 8px 8px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background: transparent;
+  color: white;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Label começa no meio, branco */
+.input-group label {
+  position: absolute;
+  left: 10px;
+  top: 16px;
+  color: white;
+  background-color: transparent;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 
+    transform 0.3s ease,
+    font-size 0.3s ease,
+    color 0.3s ease,
+    top 0.3s ease;
+}
+
+/* Quando foca ou tem valor, anima label */
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown):valid + label,
+.input-group input:valid + label {
+  top: -10px;
+  font-size: 12px;
+  color: #ff4b4b;
+  transform: translateY(-4px);
+}
+
+/* Borda muda quando foca/preenche */
+.input-group input:focus,
+.input-group input:valid {
+  border-color: #ff4b4b;
 }
 
 /* Container do checkbox do login */
@@ -177,13 +215,25 @@
 .account .login-container .cadastro {
   width: 436px;
   height: 484px;
-  background-color: aqua;
+  color: white;
+  align-content: center;
+  background-color: darkblue;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
-}
+} .cadastro button{
+  background-color: #009e2a;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  width: 100%;
+  box-shadow: #000 0px 1px 0px 1px;
+} .cadastro button:hover{
+  cursor: pointer;
+  background-color: darkgreen}
 
 .account .login-container .cadastro .lock-icon {
   margin-top: 20px;
