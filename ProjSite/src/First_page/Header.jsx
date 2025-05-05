@@ -89,7 +89,7 @@ function Header() {
   ];
 
   return (
-    <>
+    
       <div className="home">
         <header className="header-upper">
           <span className="logo-container">
@@ -225,6 +225,7 @@ function Header() {
 
       {sidebarOpen && <div className="overlay" onClick={() => setSidebarOpen(false)} />}
     </div>
+    
   );
 }
 
