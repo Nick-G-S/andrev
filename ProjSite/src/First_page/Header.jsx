@@ -48,6 +48,7 @@ function Header() {
     {
       name: "Hardware",
       icon: faMicrochip,
+      icon2: faAngleDown,
       submenu: [
         "Processadores",
         "Placa Mãe",
@@ -65,100 +66,118 @@ function Header() {
         "Drive Óptico",
         "Acessórios para Gabinete",
         "Ver Todos"
-      ],
-      icon2: faAngleDown
-
+      ]
     },
-    { name: "Periféricos", icon: faKeyboard, icon2: faAngleDown},
-    { name: "Computadores", icon: faDesktop, icon2: faAngleDown },
-    { name: "Kit Upgrade", icon: faCogs, icon2: faAngleDown },
-    { name: "Monitores", icon: faTv, icon2: faAngleDown  },
-    { name: "Cadeiras e Mesas Gamer e Escritório", icon: faChair, icon2: faAngleDown  },
-    { name: "Eletrônicos", icon: faPlug, icon2: faAngleDown  },
-    { name: "Notebooks e Portáteis", icon: faLaptop, icon2: faAngleDown  },
-    { name: "Mochilas", icon: faSuitcase, icon2: faAngleDown  },
-    { name: "Video Games", icon: faGamepad, icon2: faAngleDown  },
-    { name: "Redes e Wireless", icon: faWifi, icon2: faAngleDown  },
-    { name: "Realidade Virtual", icon: faVrCardboard, icon2: faAngleDown  },
-    { name: "Casa Inteligente", icon: faHome, icon2: faAngleDown  },
-    { name: "Casa e Lazer", icon: faUmbrellaBeach, icon2: faAngleDown  },
-    { name: "Openbox", icon: faBoxOpen, icon2: faAngleDown  },
-    { name: "Pets", icon: faPaw, icon2: faAngleDown  },
-    { name: "Vestuário", icon: faTshirt, icon2: faAngleDown  },
-    { name: "Marcas", icon: faTags, icon2: faAngleDown  }
+    {
+      name: "Periféricos", icon: faKeyboard, icon2: faAngleDown,
+      submenu: [
+        "Acessórios",
+        "Caixa de Som",
+        "Teclado",
+        "Fone de Ouvido",
+        "Microfones",
+        "Kit Teclado e Mouse",
+        "Kits Periféricos",
+        "Mouse",
+        "Mousepad",
+        "Cabos e Adaptadores",
+        "Impressoras",
+        "Armazenamento",
+        "Energia",
+        "Webcam",
+        "Pendrives",
+        "Mesa Digitalizadora",
+        "Ver Todos"]
+    },
+    { name: "Computadores", icon: faDesktop, icon2: faAngleDown, submenu: [] },
+    { name: "Kit Upgrade", icon: faCogs, icon2: faAngleDown, submenu: [] },
+    { name: "Monitores", icon: faTv, icon2: faAngleDown, submenu: [] },
+    { name: "Cadeiras e Mesas Gamer e Escritório", icon: faChair, icon2: faAngleDown, submenu: [] },
+    { name: "Eletrônicos", icon: faPlug, icon2: faAngleDown, submenu: [] },
+    { name: "Notebooks e Portáteis", icon: faLaptop, icon2: faAngleDown, submenu: [] },
+    { name: "Mochilas", icon: faSuitcase, icon2: faAngleDown, submenu: [] },
+    { name: "Video Games", icon: faGamepad, icon2: faAngleDown, submenu: [] },
+    { name: "Redes e Wireless", icon: faWifi, icon2: faAngleDown, submenu: [] },
+    { name: "Realidade Virtual", icon: faVrCardboard, icon2: faAngleDown, submenu: [] },
+    { name: "Casa Inteligente", icon: faHome, icon2: faAngleDown, submenu: [] },
+    { name: "Casa e Lazer", icon: faUmbrellaBeach, icon2: faAngleDown, submenu: [] },
+    { name: "Openbox", icon: faBoxOpen, icon2: faAngleDown, submenu: [] },
+    { name: "Pets", icon: faPaw, icon2: faAngleDown, submenu: [] },
+    { name: "Vestuário", icon: faTshirt, icon2: faAngleDown, submenu: [] },
+    { name: "Marcas", icon: faTags, icon2: faAngleDown, submenu: [] }
   ];
 
   return (
-    
-      <div className="home">
-        <header className="header-upper">
-          <span className="logo-container">
-            <img className="pichau-logo" src={logo} alt="Pichau-logo" />
-          </span>
-          <div className="options">
-            <div className="contAcess">
-              <a href="/account" >
-                <FontAwesomeIcon icon={faCircleUser} color="red" />
-              </a>
+
+    <div className="home">
+      <header className="header-upper">
+        <span className="logo-container">
+          <img className="pichau-logo" src={logo} alt="Pichau-logo" />
+        </span>
+        <div className="options">
+          <div className="contAcess">
+            <a href="/account" >
+              <FontAwesomeIcon icon={faCircleUser} color="red" />
+            </a>
+            <span>
+              Minha Conta
+              <br />
+              <strong>Entrar / Cadastro</strong>
+            </span>
+          </div>
+          <div className="contact">
+            <a>
+              <FontAwesomeIcon icon={faCircleQuestion} color="red" />
+            </a>
+            <span>
+              Atendimento
+              <br />
+              <strong>Ao cliente</strong>
+            </span>
+          </div>
+          <div className="favoritos">
+            <a>
+              <FontAwesomeIcon icon={faHeart} color="red" />
+            </a>
+            <span>
               <span>
-                Minha Conta
+                meus
                 <br />
-                <strong>Entrar / Cadastro</strong>
+                <strong>favoritos</strong>
               </span>
-            </div>
-            <div className="contact">
-              <a>
-                <FontAwesomeIcon icon={faCircleQuestion} color="red" />
-              </a>
-              <span>
-                Atendimento
-                <br />
-                <strong>Ao cliente</strong>
-              </span>
-            </div>
-            <div className="favoritos">
-              <a>
-                <FontAwesomeIcon icon={faHeart} color="red" />
-              </a>
-              <span>
-                <span>
-                  meus
-                  <br />
-                  <strong>favoritos</strong>
-                </span>
-              </span>
-            </div>
-            <div className="fundo">
-              <button>
-                <FontAwesomeIcon icon={faMoon} color="red" />
-              </button>
-              <span>
-                Modo
-                <br />
-                <strong>Escuro</strong>
-              </span>
-            </div>
-            {/* <div className="fundo">
+            </span>
+          </div>
+          <div className="fundo">
+            <button>
+              <FontAwesomeIcon icon={faMoon} color="red" />
+            </button>
+            <span>
+              Modo
+              <br />
+              <strong>Escuro</strong>
+            </span>
+          </div>
+          {/* <div className="fundo">
             <FontAwesomeIcon icon={faSun} />
             <span>
               Modo<strong>Claro</strong>
             </span>
           </div> */}
 
-            <button className="ShoppingCar">
-              <span className="icon">
-                <FontAwesomeIcon icon={faCartShopping} size="lg" />
-              </span>
-              <span className="text">
-                <strong>CARRINHO</strong>
-                <span>0 PRODUTO</span>
-              </span>
-              <span className="arrow">
-                <FontAwesomeIcon icon={faChevronDown} size="sm" />
-              </span>
-            </button>
-          </div>
-        </header>
+          <button className="ShoppingCar">
+            <span className="icon">
+              <FontAwesomeIcon icon={faCartShopping} size="lg" />
+            </span>
+            <span className="text">
+              <strong>CARRINHO</strong>
+              <span>0 PRODUTO</span>
+            </span>
+            <span className="arrow">
+              <FontAwesomeIcon icon={faChevronDown} size="sm" />
+            </span>
+          </button>
+        </div>
+      </header>
 
       <header className="header-under">
         <button className="departamentos" onClick={() => setSidebarOpen(true)}>
@@ -203,14 +222,17 @@ function Header() {
           {categories.map((category) => (
             <li key={category.name}>
               <div onClick={() => toggleCategory(category.name)} className="menu-item-sidebar">
-                <div className="IconSidebar">
-                  <FontAwesomeIcon icon={category.icon} />
+                <div className="category-left">
+                  <div className="IconSidebar">
+                    <FontAwesomeIcon icon={category.icon} />
+                  </div>
+                  <span className="category-name">{category.name}</span>
                 </div>
-                {category.name}
                 <div className="iconSidebar2">
                   <FontAwesomeIcon icon={category.icon2} />
                 </div>
               </div>
+
               {openCategory === category.name && category.submenu && (
                 <ul className="submenu">
                   {category.submenu.map((item) => (
@@ -225,7 +247,7 @@ function Header() {
 
       {sidebarOpen && <div className="overlay" onClick={() => setSidebarOpen(false)} />}
     </div>
-    
+
   );
 }
 

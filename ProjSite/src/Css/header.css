@@ -197,7 +197,12 @@
   opacity: 0;
   transition: transform 0.3s ease, opacity 0.3s ease;
   pointer-events: none;
+
+  overflow-y: auto; /* Garante a rolagem */
+  scrollbar-color: #888 #2c2c2c; /* Firefox: thumb + track */
+
 }
+
 
 .sidebar.open {
   transform: translateX(0);
@@ -290,21 +295,23 @@
   font-size: 16px;
   margin-bottom: 10px;
   color: white;
-  align-items: center;
   display: flex;
-
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.menu-sidebar .menu-item-sidebar .category-left {
+  display: flex;
+  align-items: center;
 }
 
 .menu-sidebar .menu-item-sidebar .IconSidebar {
+  font-size: 20px;
   padding: 5px 15px 5px 10px;
-  font-size: 25px;
 }
 
-.menu-sidebar .menu-item-sidebar .iconSidebar2{
-align-items: end;
-justify-content: end;
-display: flex;
-width: 60%;
+.menu-sidebar .menu-item-sidebar .iconSidebar2 {
+  font-size: 14px;
 }
 
 .submenu li {
