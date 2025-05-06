@@ -1,5 +1,5 @@
-import Header from "../First_page/Header.jsx";
-import "../Css/login.css";
+import Header from "../../First_page/Header.jsx";
+import "../../Css/login.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLock, faUserPlus } from "@fortawesome/free-solid-svg-icons";
 
@@ -33,7 +33,7 @@ function Login() {
           <label className="custom-checkbox">
             <input type="checkbox" className="checkbox" />
             <span className="checkmark"></span>
-            <span>Lembrar meus dados</span>
+            <label>Lembrar meus dados</label>
           </label>
           <div className="btn-box">
             <button className="btn-1">ACESSAR CONTA</button>
@@ -45,11 +45,11 @@ function Login() {
           <div className="lock-icon">
             <FontAwesomeIcon icon={faUserPlus} size="lg" color="#303030" />
           </div>
-          <div>Novo Cliente</div>
-          <div>
+          <label>Novo Cliente</label>
+          <txt>
             Criar uma conta é fácil! Informe seus dados e uma senha para
             aproveitar todos os beneficios de ter uma conta.
-          </div>
+          </txt>
           <button>CADASTRE-SE</button>
         </div>
       </div>
