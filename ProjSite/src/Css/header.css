@@ -339,5 +339,10 @@
 }
 
 
+.submenu-processadores a{
+  color: white;
+  text-decoration: none;
+ }
+
 
 /* fim sidebar */
