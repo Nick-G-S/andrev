@@ -160,7 +160,7 @@ const toggleVideoCards = () => setOpenVideoCards(!openVideoCards);
         </Link>
         <div className="options">
           <div className="contAcess">
-            <Link href="/account">
+            <Link to="/account">
               <FontAwesomeIcon icon={faCircleUser} color="red" />
             </Link>
 
