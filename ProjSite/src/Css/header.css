@@ -44,7 +44,8 @@
   text-align: left;
 }
 
-.options a, .options button {
+.options a,
+.options button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -198,8 +199,10 @@
   transition: transform 0.3s ease, opacity 0.3s ease;
   pointer-events: none;
 
-  overflow-y: auto; /* Garante a rolagem */
-  scrollbar-color: #888 #2c2c2c; /* Firefox: thumb + track */
+  overflow-y: auto;
+  /* Garante a rolagem */
+  scrollbar-color: #888 #2c2c2c;
+  /* Firefox: thumb + track */
 
 }
 
@@ -293,13 +296,14 @@
 .menu-sidebar .menu-item-sidebar {
   cursor: pointer;
   font-size: 16px;
-  margin-bottom: 10px;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 15px;
+  padding: 4px 23px 4px 7px;
+  
 }
+
 .menu-sidebar .menu-item-sidebar .category-left {
   display: flex;
   align-items: center;
@@ -314,19 +318,42 @@
   font-size: 14px;
 }
 
+
+.menu-sidebar .menu-item-sidebar.active{
+  background-color: #262626;
+}
+
+.menu-sidebar .menu-item-sidebar:hover{
+  background-color: #1E1E1E;
+}
+
+
+
+
+
+.submenu{
+  background-color: #262626 ;
+
+}
 .submenu li {
   list-style: none;
   padding-left: 15px;
-  margin-top: 5px;
   font-size: 16px;
   font-weight: normal;
   color: white;
-  padding: 0px 0px 0px 35px;
+  padding: 15px 0px 15px 35px;
+  cursor: pointer;
+display: flex;}
+.submenu li:hover{
+  background-color: #1E1E1E;
 }
 
-.submenu li {
-  margin-bottom: 6px;
-  cursor: pointer;
+
+.submenu-processadores a {
+  color: white;
+  text-decoration: none;
+  padding: 0px 0px 0px 12px;
+
 }
 
 .close-btn {
@@ -337,12 +364,6 @@
   cursor: pointer;
   color: white;
 }
-
-
-.submenu-processadores a{
-  color: white;
-  text-decoration: none;
- }
 
 
 /* fim sidebar */
