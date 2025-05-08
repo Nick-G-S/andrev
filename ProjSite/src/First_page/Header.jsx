@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router";
 import {
   faBars,
   faCircleUser,
@@ -32,7 +33,7 @@ import {
   faTshirt,
   faTags,
   faAngleDown,
-  faAngleUp
+  faAngleUp,
 } from "@fortawesome/free-solid-svg-icons";
 import logo from "../assets/pichau-logo.png";
 
@@ -97,11 +98,13 @@ const toggleVideoCards = () => setOpenVideoCards(!openVideoCards);
         "Placas de Som",
         "Drive Óptico",
         "Acessórios para Gabinete",
-        "Ver Todos"
-      ]
+        "Ver Todos",
+      ],
     },
     {
-      name: "Periféricos", icon: faKeyboard, icon2: faAngleDown,
+      name: "Periféricos",
+      icon: faKeyboard,
+      icon2: faAngleDown,
       submenu: [
         "Acessórios",
         "Caixa de Som",
@@ -119,18 +122,29 @@ const toggleVideoCards = () => setOpenVideoCards(!openVideoCards);
         "Webcam",
         "Pendrives",
         "Mesa Digitalizadora",
-        "Ver Todos"]
+        "Ver Todos",
+      ],
     },
     { name: "Computadores", icon: faDesktop, icon2: faAngleDown, submenu: [] },
     { name: "Kit Upgrade", icon: faCogs },
     { name: "Monitores", icon: faTv, icon2: faAngleDown, submenu: [] },
-    { name: "Cadeiras e Mesas Gamer e Escritório", icon: faChair, icon2: faAngleDown, submenu: [] },
+    {
+      name: "Cadeiras e Mesas Gamer e Escritório",
+      icon: faChair,
+      icon2: faAngleDown,
+      submenu: [],
+    },
     { name: "Eletrônicos", icon: faPlug, icon2: faAngleDown, submenu: [] },
     { name: "Notebooks e Portáteis", icon: faLaptop, icon2: faAngleDown, submenu: [] },
     { name: "Mochilas", icon: faSuitcase },
     { name: "Video Games", icon: faGamepad, icon2: faAngleDown, submenu: [] },
     { name: "Redes e Wireless", icon: faWifi, icon2: faAngleDown, submenu: [] },
-    { name: "Realidade Virtual", icon: faVrCardboard, icon2: faAngleDown, submenu: [] },
+    {
+      name: "Realidade Virtual",
+      icon: faVrCardboard,
+      icon2: faAngleDown,
+      submenu: [],
+    },
     { name: "Casa Inteligente", icon: faHome, icon2: faAngleDown, submenu: [] },
     { name: "Casa e Lazer", icon: faUmbrellaBeach, icon2: faAngleDown, submenu: [] },
     { name: "Openbox", icon: faBoxOpen },
@@ -141,14 +155,15 @@ const toggleVideoCards = () => setOpenVideoCards(!openVideoCards);
   return (
     <div className="home">
       <header className="header-upper">
-        <span className="logo-container">
-          <img className="pichau-logo" src={logo} alt="Pichau-logo" />
-        </span>
+        <Link to="/" className="logo-container">
+        <img className="pichau-logo" src={logo} alt="Pichau-logo" />
+        </Link>
         <div className="options">
           <div className="contAcess">
-            <a href="/account">
+            <Link href="/account">
               <FontAwesomeIcon icon={faCircleUser} color="red" />
-            </a>
+            </Link>
+
             <span>
               Minha Conta
               <br />
@@ -227,7 +242,10 @@ const toggleVideoCards = () => setOpenVideoCards(!openVideoCards);
           <div className="SidebarLogo">
             <img className="pichau-logo-Sidebar" src={logo} alt="Pichau-logo" />
             <span className="logo-container">
-              <button className="close-btn" onClick={() => setSidebarOpen(false)}>
+              <button
+                className="close-btn"
+                onClick={() => setSidebarOpen(false)}
+              >
                 <FontAwesomeIcon icon={faTimes} size="lg" />
               </button>
             </span>
@@ -318,7 +336,9 @@ const toggleVideoCards = () => setOpenVideoCards(!openVideoCards);
 
       </div>
 
-      {sidebarOpen && <div className="overlay" onClick={() => setSidebarOpen(false)} />}
+      {sidebarOpen && (
+        <div className="overlay" onClick={() => setSidebarOpen(false)} />
+      )}
     </div>
   );
 }
