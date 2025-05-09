@@ -43,10 +43,10 @@ function Header() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [openCategory, setOpenCategory] = useState(null);
   const [openProcessors, setOpenProcessors] = useState(false);
-  
 
-const [openVideoCards, setOpenVideoCards] = useState(false);
-const toggleVideoCards = () => setOpenVideoCards(!openVideoCards);
+
+  const [openVideoCards, setOpenVideoCards] = useState(false);
+  const toggleVideoCards = () => setOpenVideoCards(!openVideoCards);
 
 
   const toggleCategory = (category) => {
@@ -74,18 +74,16 @@ const toggleVideoCards = () => setOpenVideoCards(!openVideoCards);
         },
         "Placa Mãe",
         "Memórias",
-        "Placa de Vídeo",
-
-          {
-            name: "Placa de Vídeo",
-            icon2: faAngleDown,
-            submenuItems: [
-              { name: "NVIDIA GeForce", link: "/Placa de Vídeo/NVIDIA GeForce" },
-              { name: "AMD Readeon", link: "/Placa de Vídeo/AMD Readeon"},
-              { name: "Intel Ark", link: "/Placa de Vídeo/Intel Ark"},
-              { name: "Ver Todos", link: "/Placa de Vídeo " },
-            ]
-          },
+        {
+          name: "Placa de Vídeo",
+          icon2: faAngleDown,
+          submenuItems: [
+            { name: "NVIDIA GeForce", link: "/Placa de Vídeo/NVIDIA GeForce" },
+            { name: "AMD Readeon", link: "/Placa de Vídeo/AMD Readeon" },
+            { name: "Intel Ark", link: "/Placa de Vídeo/Intel Ark" },
+            { name: "Ver Todos", link: "/Placa de Vídeo " },
+          ]
+        },
 
         "Disco Rígido interno (HD)",
         "SSD",
@@ -128,23 +126,13 @@ const toggleVideoCards = () => setOpenVideoCards(!openVideoCards);
     { name: "Computadores", icon: faDesktop, icon2: faAngleDown, submenu: [] },
     { name: "Kit Upgrade", icon: faCogs },
     { name: "Monitores", icon: faTv, icon2: faAngleDown, submenu: [] },
-    {
-      name: "Cadeiras e Mesas Gamer e Escritório",
-      icon: faChair,
-      icon2: faAngleDown,
-      submenu: [],
-    },
+    { name: "Cadeiras e Mesas Gamer e Escritório", icon: faChair, icon2: faAngleDown, submenu: [], },
     { name: "Eletrônicos", icon: faPlug, icon2: faAngleDown, submenu: [] },
     { name: "Notebooks e Portáteis", icon: faLaptop, icon2: faAngleDown, submenu: [] },
     { name: "Mochilas", icon: faSuitcase },
     { name: "Video Games", icon: faGamepad, icon2: faAngleDown, submenu: [] },
     { name: "Redes e Wireless", icon: faWifi, icon2: faAngleDown, submenu: [] },
-    {
-      name: "Realidade Virtual",
-      icon: faVrCardboard,
-      icon2: faAngleDown,
-      submenu: [],
-    },
+    { name: "Realidade Virtual", icon: faVrCardboard, icon2: faAngleDown, submenu: [], },
     { name: "Casa Inteligente", icon: faHome, icon2: faAngleDown, submenu: [] },
     { name: "Casa e Lazer", icon: faUmbrellaBeach, icon2: faAngleDown, submenu: [] },
     { name: "Openbox", icon: faBoxOpen },
@@ -156,7 +144,7 @@ const toggleVideoCards = () => setOpenVideoCards(!openVideoCards);
     <div className="home">
       <header className="header-upper">
         <Link to="/" className="logo-container">
-        <img className="pichau-logo" src={logo} alt="Pichau-logo" />
+          <img className="pichau-logo" src={logo} alt="Pichau-logo" />
         </Link>
         <div className="options">
           <div className="contAcess">
@@ -265,74 +253,72 @@ const toggleVideoCards = () => setOpenVideoCards(!openVideoCards);
 
 
         <ul className="menu-sidebar">
-  {categories.map((category) => (
-    <li key={category.name}>
-      <div
-        onClick={() => toggleCategory(category.name)}
-        className={`menu-item-sidebar ${openCategory === category.name ? 'active' : ''}`}
-      >
-        <div className="category-left">
-          <div className="IconSidebar">
-            <FontAwesomeIcon icon={category.icon} />
-          </div>
-          <span className="category-name">{category.name}</span>
-        </div>
-        <div className="iconSidebar2">
-          <FontAwesomeIcon icon={category.icon2} />
-        </div>
-      </div>
-
-      {openCategory === category.name && category.name === "Hardware" && (
-        <ul className="submenu">
-          {category.submenu.map((item, index) => {
-            if (typeof item === "string") {
-              return (
-                <li
-                  key={item}
-                  onClick={item === "Processadores" ? toggleProcessors : null}
-                  className="submenu-item"
-                >
-                  <span>{item}</span>
-                  {item === "Processadores" && (
-                    <FontAwesomeIcon icon={category.icon2} className="icon-processadores" />
-                  )}
-                </li>
-              );
-            }
-
-            const isProcessors = item.name === "Processadores";
-            const isVideoCards = item.name === "Placa de Vídeo";
-
-            const isOpen = isProcessors ? openProcessors : isVideoCards ? openVideoCards : false;
-            const toggleSubmenu = isProcessors
-              ? toggleProcessors
-              : isVideoCards
-              ? toggleVideoCards
-              : () => {};
-
-            return (
-              <div key={item.name}>
-                <li onClick={toggleSubmenu} className="submenu-item">
-                  <span>{item.name}</span>
-                  <FontAwesomeIcon icon={category.icon2} className="icon-processadores" />
-                </li>
-                {isOpen && (
-                  <ul className="submenu-processadores">
-                    {item.submenuItems.map((subItem) => (
-                      <li key={subItem.name}>
-                        <a href={subItem.link}>{subItem.name}</a>
-                      </li>
-                    ))}
-                  </ul>
-                )}
+          {categories.map((category) => (
+            <li key={category.name}>
+              <div
+                onClick={() => toggleCategory(category.name)}
+                className={`menu-item-sidebar ${openCategory === category.name ? 'active' : ''}`}
+              >
+                <div className="category-left">
+                  <div className="IconSidebar">
+                    <FontAwesomeIcon icon={category.icon} />
+                  </div>
+                  <span className="category-name">{category.name}</span>
+                </div>
+                <div className="iconSidebar2">
+                  <FontAwesomeIcon icon={category.icon2} />
+                </div>
               </div>
-            );
-          })}
+
+              <ul className={`submenu ${openCategory === category.name && category.name === "Hardware" ? 'open' : ''}`}>
+                {category.name === "Hardware" &&
+                  category.submenu.map((item, index) => {
+                    if (typeof item === "string") {
+                      return (
+                        <li
+                          key={item}
+                          onClick={item === "Processadores" ? toggleProcessors : null}
+                          className="submenu-item"
+                        >
+                          <span>{item}</span>
+                          {item === "Processadores" && (
+                            <FontAwesomeIcon icon={category.icon2} className="icon-processadores" />
+                          )}
+                        </li>
+                      );
+                    }
+
+                    const isProcessors = item.name === "Processadores";
+                    const isVideoCards = item.name === "Placa de Vídeo";
+
+                    const isOpen = isProcessors ? openProcessors : isVideoCards ? openVideoCards : false;
+                    const toggleSubmenu = isProcessors
+                      ? toggleProcessors
+                      : isVideoCards
+                        ? toggleVideoCards
+                        : () => { };
+
+                    return (
+                      <div key={item.name}>
+                        <li onClick={toggleSubmenu} className="submenu-item">
+                          <span>{item.name}</span>
+                          <FontAwesomeIcon icon={category.icon2} className="icon-processadores" />
+                        </li>
+                        <ul className={`submenu-processadores ${isOpen ? 'open' : ''}`}>
+                          {isOpen &&
+                            item.submenuItems.map((subItem) => (
+                              <li key={subItem.name}>
+                                <a href={subItem.link}>{subItem.name}</a>
+                              </li>
+                            ))}
+                        </ul>
+                      </div>
+                    );
+                  })}
+              </ul>
+            </li>
+          ))}
         </ul>
-      )}
-    </li>
-  ))}
-</ul>
 
       </div>
 

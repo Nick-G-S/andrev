@@ -291,6 +291,7 @@
 .menu-sidebar {
   list-style: none;
   padding: 0;
+
 }
 
 .menu-sidebar .menu-item-sidebar {
@@ -307,11 +308,13 @@
 .menu-sidebar .menu-item-sidebar .category-left {
   display: flex;
   align-items: center;
+
 }
 
 .menu-sidebar .menu-item-sidebar .IconSidebar {
   font-size: 20px;
   padding: 5px 15px 5px 10px;
+
 }
 
 .menu-sidebar .menu-item-sidebar .iconSidebar2 {
@@ -326,6 +329,7 @@
 
 .menu-sidebar .menu-item-sidebar:hover {
   background-color: #1E1E1E;
+
 }
 
 
@@ -334,8 +338,17 @@
 
 .submenu {
   background-color: #262626;
-
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease;
+  padding: 0;
 }
+
+.submenu.open {
+  max-height: 1000px; /* valor alto o suficiente para mostrar o conteúdo */
+  padding: 10px 0;
+}
+
 
 .submenu li {
   list-style: none;
