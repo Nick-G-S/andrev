@@ -1,4 +1,81 @@
 .atendimento{
-    height: 1000px;
+    margin-top: 164px;
+    height: 10010px;
     background-color: #303030;
 }
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 1500px;
+    margin-left: 300px;
+    padding-top: 50px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.sugestion{
+    background-color: #CA0404;
+    color: white;
+    cursor: pointer;
+    padding: 19px;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "Roboto", "Helvetica", "Arial", sans serif;
+}
+
+
+h1{
+    font-size: 50px;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h2{
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.att-bottom{
+    margin-top: 100px;
+}
+
+.icon{
+    margin-top: 20px;
+    background-color: #CA0404;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 40px;
+    border-radius: 5px;
+    font-family: "Roboto", "Helvetica", "Arial", sans serif;
+}
+
+.upper{
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: roboto;
+    margin-top: 10px;
+}
+
+.lower{
+    font-family: roboto;
+    margin-top: 10px;
+}
+
