@@ -3,9 +3,8 @@
     font-size: 55px;
 }
 
-.historicoDeNavegacao span {
-    color: red;
-    font-size: 55px;
+.historicoDeNavegacao {
+  margin-top: 40px;
 }
 
 /* inicio atendimento online */

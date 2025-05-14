@@ -159,9 +159,9 @@ function Header() {
             </span>
           </div>
           <div className="contact">
-            <a>
+            <Link to="/atendimento">
               <FontAwesomeIcon icon={faCircleQuestion} color="red" />
-            </a>
+            </Link>
             <span>
               Atendimento
               <br />

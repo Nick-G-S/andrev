@@ -9,7 +9,7 @@
     flex-direction: column;
     gap: 10px;
     width: 1500px;
-    margin-left: 300px;
+    margin-left: 280px;
     padding-top: 50px;
     margin-bottom: 10px;
     color: white;
@@ -64,18 +64,26 @@ h2{
     padding-left: 40px;
     border-radius: 5px;
     font-family: "Roboto", "Helvetica", "Arial", sans serif;
+}.phone .upper{
+
 }
 
 .upper{
+    display: flex;
+    gap: 10px;
     color: black;
     font-weight: bold;
     font-size: 30px;
     font-family: roboto;
-    margin-top: 10px;
+    margin-top: 30px;
+}.phone .upper{
+    margin-top: 40px;
 }
 
 .lower{
     font-family: roboto;
-    margin-top: 10px;
+    margin-bottom: 20px;
+}.phone .lower{
+ margin-bottom: 30px;
 }
 

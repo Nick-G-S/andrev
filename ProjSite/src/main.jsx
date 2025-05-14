@@ -5,6 +5,7 @@ import './index.css';
 import App from './App.jsx';
 import Login from './routes/Login/Login.jsx';
 import Atendimento from './routes/Atendimento/Atendimento.jsx';
+import History from './First_page/History.jsx';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
     path: "/atendimento",
     element: <Atendimento />
   },
+  {
+    path: "history", //para apagar depois 
+    element: <History />
+  }
 ]);
 
 const root = document.getElementById("root");

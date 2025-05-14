@@ -1,7 +1,8 @@
 import Header from "../../First_page/Header.jsx";
 import "../../Css/atendimento.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCommentDots } from "@fortawesome/free-solid-svg-icons";
+import { faCommentDots, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 function Atendimento() {
   return (
     <div>
@@ -62,9 +63,9 @@ function Atendimento() {
                 </div>
               </div>
 
-              <div className="icon">
+              <div className="icon phone">
                 <div className="upper">
-                  <FontAwesomeIcon icon={faCommentDots} color="black" />
+                  <FontAwesomeIcon icon={faPhone} color="black" />
                   <span>Telefone de contato</span>
                 </div>
                 <div className="lower">
@@ -77,7 +78,7 @@ function Atendimento() {
               </div>
               <div className="icon">
                 <div className="upper">
-                  <FontAwesomeIcon icon={faCommentDots} color="black" />
+                  <FontAwesomeIcon icon={faEnvelope} color="black" />
                   <span>E-mail de contato</span>
                 </div>
                 <div className="lower">

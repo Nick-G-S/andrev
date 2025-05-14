@@ -23,6 +23,7 @@ import certificado1 from "../assets/certificado1.png";
 import certificado2 from "../assets/certificado2.png";
 import certificado3 from "../assets/certificado3.png";
 import certificado4 from "../assets/certificado4.png";
+import History from './History.jsx';
 
 
 
@@ -35,9 +36,7 @@ function footer() {
   return (
     <>
       <div className="historicoDeNavegacao">
-        <span>
-          historico de navegação
-        </span>
+        <History />
       </div>
 
       <div className="contato_atendimento">
