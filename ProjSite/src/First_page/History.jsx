@@ -12,17 +12,17 @@ function History() {
                 <FontAwesomeIcon icon={faClockRotateLeft} color="red" />
                 <span>SEU HISTÓRICO DE NAVEGAÇÃO</span>
             </div>
-            <div className="content">
-                <div className="product"><img src={testProduct} alt="Produto" /></div>
-                <div className="product"><img src={testProduct} alt="Produto" /></div>
-                <div className="product"><img src={testProduct} alt="Produto" /></div>
-                <div className="product"><img src={testProduct} alt="Produto" /></div>
-                <div className="product"><img src={testProduct} alt="Produto" /></div>
-                <div className="product"><img src={testProduct} alt="Produto" /></div>
-                <div className="product"><img src={testProduct} alt="Produto" /></div>
-                <div className="product"><img src={testProduct} alt="Produto" /></div>
-                <div className="product"><img src={testProduct} alt="Produto" /></div>
-                <div className="product"><img src={testProduct} alt="Produto" /></div>
+            <div className="content-history">
+                <div className="product-history"><img src={testProduct} alt="Produto" /></div>
+                <div className="product-history"><img src={testProduct} alt="Produto" /></div>
+                <div className="product-history"><img src={testProduct} alt="Produto" /></div>
+                <div className="product-history"><img src={testProduct} alt="Produto" /></div>
+                <div className="product-history"><img src={testProduct} alt="Produto" /></div>
+                <div className="product-history"><img src={testProduct} alt="Produto" /></div>
+                <div className="product-history"><img src={testProduct} alt="Produto" /></div>
+                <div className="product-history"><img src={testProduct} alt="Produto" /></div>
+                <div className="product-history"><img src={testProduct} alt="Produto" /></div>
+                <div className="product-history"><img src={testProduct} alt="Produto" /></div>
             </div>
         </div>
     )

@@ -11,16 +11,16 @@
   margin-bottom: 10px;
 }
 
-.content {
+.content-history {
   display: flex;
 }
-.content div{
+.content-history div{
    width: 150px;
    height: 134px;
    padding: 0, 0, 0, 16px;
 }
 
-.content div img{
+.content-history div img{
     max-width: 100px;
     max-height: 100px;
     border-radius: 100%;
