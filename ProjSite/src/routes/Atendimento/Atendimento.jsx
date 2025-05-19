@@ -49,7 +49,7 @@ function Atendimento() {
             </p>
 
             <div>
-              <div className="icon">
+              <div className="icon-att">
                 <div className="upper">
                   <FontAwesomeIcon icon={faCommentDots} color="black" />
                   <span>Atendimento Loja Virtual</span>
@@ -63,7 +63,7 @@ function Atendimento() {
                 </div>
               </div>
 
-              <div className="icon phone">
+              <div className="icon-att phone">
                 <div className="upper">
                   <FontAwesomeIcon icon={faPhone} color="black" />
                   <span>Telefone de contato</span>
@@ -76,7 +76,7 @@ function Atendimento() {
                   </span>
                 </div>
               </div>
-              <div className="icon">
+              <div className="icon-att">
                 <div className="upper">
                   <FontAwesomeIcon icon={faEnvelope} color="black" />
                   <span>E-mail de contato</span>
