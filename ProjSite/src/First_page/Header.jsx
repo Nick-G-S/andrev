@@ -202,7 +202,7 @@ function Header() {
           </div>
 
           <button className="ShoppingCar">
-            <span className="icon">
+            <span className="iconCar">
               <FontAwesomeIcon icon={faCartShopping} size="lg" />
             </span>
             <span className="text">
