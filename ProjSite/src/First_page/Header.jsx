@@ -123,9 +123,19 @@ function Header() {
         "Ver Todos",
       ],
     },
-    { name: "Computadores", icon: faDesktop, icon2: faAngleDown, submenu: [] },
+    {
+      name: "Computadores", icon: faDesktop, icon2: faAngleDown,
+      submenu: [
+        "PC Gamer", 
+        "computadores Woskstation", 
+        "Computadores Casa e Escritorio", 
+        "Ver Todos",]
+    },
     { name: "Kit Upgrade", icon: faCogs },
-    { name: "Monitores", icon: faTv, icon2: faAngleDown, submenu: [] },
+    { name: "Monitores", icon: faTv, icon2: faAngleDown, 
+      submenu: []
+
+     },
     { name: "Cadeiras e Mesas Gamer e Escritório", icon: faChair, icon2: faAngleDown, submenu: [], },
     { name: "Eletrônicos", icon: faPlug, icon2: faAngleDown, submenu: [] },
     { name: "Notebooks e Portáteis", icon: faLaptop, icon2: faAngleDown, submenu: [] },
@@ -270,51 +280,50 @@ function Header() {
                 </div>
               </div>
 
-              <ul className={`submenu ${openCategory === category.name && category.name === "Hardware" ? 'open' : ''}`}>
-                {category.name === "Hardware" &&
-                  category.submenu.map((item, index) => {
-                    if (typeof item === "string") {
-                      return (
-                        <li
-                          key={item}
-                          onClick={item === "Processadores" ? toggleProcessors : null}
-                          className="submenu-item"
-                        >
-                          <span>{item}</span>
-                          {item === "Processadores" && (
-                            <FontAwesomeIcon icon={category.icon2} className="icon-processadores" />
-                          )}
-                        </li>
-                      );
-                    }
-
-                    const isProcessors = item.name === "Processadores";
-                    const isVideoCards = item.name === "Placa de Vídeo";
-
-                    const isOpen = isProcessors ? openProcessors : isVideoCards ? openVideoCards : false;
-                    const toggleSubmenu = isProcessors
-                      ? toggleProcessors
-                      : isVideoCards
-                        ? toggleVideoCards
-                        : () => { };
-
+              <ul className={`submenu ${openCategory === category.name ? 'open' : ''}`}>
+                {category.submenu && category.submenu.map((item, index) => {
+                  if (typeof item === "string") {
                     return (
-                      <div key={item.name}>
-                        <li onClick={toggleSubmenu} className="submenu-item">
-                          <span>{item.name}</span>
+                      <li
+                        key={item}
+                        onClick={item === "Processadores" ? toggleProcessors : null}
+                        className="submenu-item"
+                      >
+                        <span>{item}</span>
+                        {item === "Processadores" && (
                           <FontAwesomeIcon icon={category.icon2} className="icon-processadores" />
-                        </li>
-                        <ul className={`submenu-processadores ${isOpen ? 'open' : ''}`}>
-                          {isOpen &&
-                            item.submenuItems.map((subItem) => (
-                              <li key={subItem.name}>
-                                <a href={subItem.link}>{subItem.name}</a>
-                              </li>
-                            ))}
-                        </ul>
-                      </div>
+                        )}
+                      </li>
                     );
-                  })}
+                  }
+
+                  const isProcessors = item.name === "Processadores";
+                  const isVideoCards = item.name === "Placa de Vídeo";
+
+                  const isOpen = isProcessors ? openProcessors : isVideoCards ? openVideoCards : false;
+                  const toggleSubmenu = isProcessors
+                    ? toggleProcessors
+                    : isVideoCards
+                      ? toggleVideoCards
+                      : () => { };
+
+                  return (
+                    <div key={item.name}>
+                      <li onClick={toggleSubmenu} className="submenu-item">
+                        <span>{item.name}</span>
+                        <FontAwesomeIcon icon={category.icon2} className="icon-processadores" />
+                      </li>
+                      <ul className={`submenu-processadores ${isOpen ? 'open' : ''}`}>
+                        {isOpen &&
+                          item.submenuItems.map((subItem) => (
+                            <li key={subItem.name}>
+                              <a href={subItem.link}>{subItem.name}</a>
+                            </li>
+                          ))}
+                      </ul>
+                    </div>
+                  );
+                })}
               </ul>
             </li>
           ))}
