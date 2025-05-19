@@ -392,6 +392,18 @@ font-size: 15px;
  padding: 0px 0px 0px 133px;
 }
 
+.submenu-processadores {
+  background-color: #262626;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease;
+  padding: 0;
+}
+
+.submenu-processadores.open {
+  max-height: 200px;
+ padding: 10px 0;
+}
 
 
 /* fim sidebar */

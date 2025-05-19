@@ -126,16 +126,17 @@ function Header() {
     {
       name: "Computadores", icon: faDesktop, icon2: faAngleDown,
       submenu: [
-        "PC Gamer", 
-        "computadores Woskstation", 
-        "Computadores Casa e Escritorio", 
+        "PC Gamer",
+        "computadores Woskstation",
+        "Computadores Casa e Escritorio",
         "Ver Todos",]
     },
     { name: "Kit Upgrade", icon: faCogs },
-    { name: "Monitores", icon: faTv, icon2: faAngleDown, 
+    {
+      name: "Monitores", icon: faTv, icon2: faAngleDown,
       submenu: []
 
-     },
+    },
     { name: "Cadeiras e Mesas Gamer e Escritório", icon: faChair, icon2: faAngleDown, submenu: [], },
     { name: "Eletrônicos", icon: faPlug, icon2: faAngleDown, submenu: [] },
     { name: "Notebooks e Portáteis", icon: faLaptop, icon2: faAngleDown, submenu: [] },
