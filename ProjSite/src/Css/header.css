@@ -340,12 +340,12 @@
   background-color: #262626;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1s ease;
+  transition: max-height .8s ease;
   padding: 0;
 }
 
 .submenu.open {
-  max-height: 1000px; /* valor alto o suficiente para mostrar o conteúdo */
+  max-height: 1000px; 
   padding: 10px 0;
 }
 
@@ -359,6 +359,7 @@
   padding: 15px 0px 15px 35px;
   cursor: pointer;
   display: flex;
+
 
 }
 
